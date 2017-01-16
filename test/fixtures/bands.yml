@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  band_name: MyString
+  start_time: 2017-01-16 15:31:04
+  end_time: 2017-01-16 15:31:04
+  description: MyText
+  notes: MyText
+  facebook_link: MyString
+  instagram_link: MyString
+  twitter_link: MyString
+  youtube_link: MyString
+  website_link: MyString
+  rider: MyText
+  load_in_time: 2017-01-16 15:31:04
+  sound_check_time: 2017-01-16 15:31:04
+  pay_agreement: MyText
+  settled_amount: 1
+  event_id: 1
+
+two:
+  band_name: MyString
+  start_time: 2017-01-16 15:31:04
+  end_time: 2017-01-16 15:31:04
+  description: MyText
+  notes: MyText
+  facebook_link: MyString
+  instagram_link: MyString
+  twitter_link: MyString
+  youtube_link: MyString
+  website_link: MyString
+  rider: MyText
+  load_in_time: 2017-01-16 15:31:04
+  sound_check_time: 2017-01-16 15:31:04
+  pay_agreement: MyText
+  settled_amount: 1
+  event_id: 1

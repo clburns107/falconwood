@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170116212956) do
+ActiveRecord::Schema.define(version: 20170116213104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bands", force: :cascade do |t|
+    t.string   "band_name"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.text     "description"
+    t.text     "notes"
+    t.string   "facebook_link"
+    t.string   "instagram_link"
+    t.string   "twitter_link"
+    t.string   "youtube_link"
+    t.string   "website_link"
+    t.text     "rider"
+    t.datetime "load_in_time"
+    t.datetime "sound_check_time"
+    t.text     "pay_agreement"
+    t.integer  "settled_amount"
+    t.integer  "event_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   default: 0, null: false
