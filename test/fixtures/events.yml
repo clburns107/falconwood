@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  start_time: 2017-01-16 15:00:13
+  end_time: 2017-01-16 15:00:13
+  description: MyText
+  notes: MyText
+  guest_number: 1
+  head_table_count: 1
+  alcohol_order: MyText
+  table_arrangement: MyText
+  catering_instructions: MyText
+  glamp_site_number: 1
+  ceremony_site: MyString
+  schedule: MyText
+  rental_fee: 1
+  ticket_link: MyString
+  rating: MyString
+  door_time: 2017-01-16 15:00:13
+  presale_ticket_number: 2017-01-16 15:00:13
+  door_ticket_number: 2017-01-16 15:00:13
+
+two:
+  event_name: MyString
+  start_time: 2017-01-16 15:00:13
+  end_time: 2017-01-16 15:00:13
+  description: MyText
+  notes: MyText
+  guest_number: 1
+  head_table_count: 1
+  alcohol_order: MyText
+  table_arrangement: MyText
+  catering_instructions: MyText
+  glamp_site_number: 1
+  ceremony_site: MyString
+  schedule: MyText
+  rental_fee: 1
+  ticket_link: MyString
+  rating: MyString
+  door_time: 2017-01-16 15:00:13
+  presale_ticket_number: 2017-01-16 15:00:13
+  door_ticket_number: 2017-01-16 15:00:13
