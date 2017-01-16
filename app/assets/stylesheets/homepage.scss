@@ -1,3 +1,63 @@
 // Place all the styles related to the homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* video stylings */
+video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+/* end video stylings */
+
+/* overlay stylings */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  z-index: 100;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay p {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+/* end overlay stylings */
+
+
+@media screen and (max-height: 450px) {
+  /* overlay stylings */
+  .overlay {overflow-y: auto;}
+  .overlay p {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  /* end overlay stylings */
+}
