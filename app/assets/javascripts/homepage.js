@@ -47,9 +47,13 @@ $(document).ready(function() {
       }
     }
 
+            // var bindActions = function() {
+      //   tileLink.on('click', open);
+      //   tileLink.on('click', close);
+      // };
       var bindActions = function() {
-        tileLink.on('click', open);
-        stripClose.on('click', close);
+        tileLink.mouseenter(open);
+        tileLink.mouseleave(close);
       };
 
       var init = function() {
