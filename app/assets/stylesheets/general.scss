@@ -29,7 +29,7 @@ $color5: #F24B4B;
   &__strip {
     will-change: width, left, z-index, height;
     position: absolute;
-    width: 30%;
+    width: 20%;
     min-height: 100vh;
     overflow: hidden;
     cursor: pointer;
@@ -184,9 +184,8 @@ $color5: #F24B4B;
   }
   
   &__strip--expanded {
-    width: 100%;
+    width: 20%;
     top: 0 !important;
-    left: 0 !important;
     z-index: 3;
     cursor: default;
     
