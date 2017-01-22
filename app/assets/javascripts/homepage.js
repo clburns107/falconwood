@@ -48,8 +48,8 @@ $(document).ready(function() {
     }
 
       var bindActions = function() {
-        tileLink.mouseenter(open);
-        tileLink.mouseleave(close);
+        tileLink.on('click', open);
+        stripClose.on('click', close);
       };
 
       var init = function() {
