@@ -47,10 +47,19 @@ $(document).ready(function() {
       }
     }
 
-      var bindActions = function() {
-        tileLink.on('click', open);
-        stripClose.on('click', close);
-      };
+      if ($(window).width() < 761) {
+        var bindActions = function() {
+          tileLink.on('click', open);
+          stripClose.on('click', close);
+        };
+        alert("less than 761");
+      } else {
+        var bindActions = function() {
+          tileLink.mouseenter(open);
+          tileLink.mouseleave(close);
+        };
+        alert("more than 761");
+      }
 
       var init = function() {
         bindActions();
