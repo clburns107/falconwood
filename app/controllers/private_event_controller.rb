@@ -1,0 +1,2 @@
+class PrivateEventController < ApplicationController
+end
