@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get "camping", to: "camping#index"
   get "drive_in", to: "drive_in#index"
   get "wedding", to: "wedding#index"
-  get "concerts", to: "concert#index"
+  get "concerts", to: "concerts#index"
 end
