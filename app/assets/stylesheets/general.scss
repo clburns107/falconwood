@@ -55,9 +55,10 @@ $color5: #F24B4B;
       left: 80vw;
     }
     
+    //photos change for media queries in js file
     &:nth-child(1) {
       .strip__content {
-        background: $color1;
+        background-image: url("http://lorempixel.com/288/900/");
         transform: translate3d(-100%, 0, 0);
         animation-name: strip1;
         animation-delay: 0.1s;
@@ -66,7 +67,7 @@ $color5: #F24B4B;
     
     &:nth-child(2) {
       .strip__content {
-        background: $color2;
+        background-image: url("http://lorempixel.com/288/900/");
         transform: translate3d(0, 100%, 0);
         animation-name: strip2;
         animation-delay: 0.2s;
@@ -75,7 +76,7 @@ $color5: #F24B4B;
     
     &:nth-child(3) {
       .strip__content {
-        background: $color3;
+        background-image: url("http://lorempixel.com/288/900/");
         transform: translate3d(0, -100%, 0);
         animation-name: strip3;
         animation-delay: 0.3s;
@@ -84,7 +85,7 @@ $color5: #F24B4B;
     
     &:nth-child(4) {
       .strip__content {
-        background: $color4;
+        background-image: url("http://lorempixel.com/288/900/");
         transform: translate3d(0, 100%, 0);
         animation-name: strip4;
         animation-delay: 0.4s;
@@ -93,7 +94,7 @@ $color5: #F24B4B;
     
     &:nth-child(5) {
       .strip__content {
-        background: $color5;
+        background-image: url("http://lorempixel.com/288/900/");
         transform: translate3d(100%, 0, 0);
         animation-name: strip5;
         animation-delay: 0.5s;
@@ -291,32 +292,4 @@ $color5: #F24B4B;
   100% {
     transform: translate3d(0, 0, 0);
   }
-}
-
-/* Demo purposes */
-
-body {
-  font-family: 'Lato';
-  -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
-  line-height: 1.5;
-}
-
-h1, h2 {
-  font-weight: 300;
-}
-
-.fa {
-  font-size: 30px;
-  color: white;
-}
-
-h2 {
-  font-size: 36px;
-  margin: 0 0 16px;
-}
-
-p {
-  font-size: 16px;
-  margin: 0 0 16px;
 }
