@@ -1,2 +1,2 @@
-class ConcertController < ApplicationController
+class ConcertsController < ApplicationController
 end
