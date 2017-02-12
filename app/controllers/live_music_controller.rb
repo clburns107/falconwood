@@ -1,0 +1,2 @@
+class LiveMusicController < ApplicationController
+end

@@ -1,2 +1,0 @@
-class ConcertController < ApplicationController
-end

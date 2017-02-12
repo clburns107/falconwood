@@ -1,20 +1,16 @@
 //opens full screen overlay
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+function openOverlay() {
+  $("#homepage-overlay").css('height', '100%');
 }
 
 //closes full screen overlay
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+function closeOverlay() {
+  $("#homepage-overlay").css('height', '0%');
 }
 
-
-
-$(document).ready(function() {
-  //open overlay on ready
-  openNav();
-
-    var Expand = (function() {
+//displays text and link on hover for homepage columns
+function columns() {
+  var Expand = (function() {
     var tile = $('.strips__strip');
     var tileLink = $('.strips__strip > .strip__content');
     var tileText = tileLink.find('.strip__inner-text');
@@ -67,8 +63,25 @@ $(document).ready(function() {
       return {
         init: init
       };
-
-    }());
+  }());
 
   Expand.init();
+}
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  $("#mySidenav").css('width', '250px');
+    // document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  $("#mySidenav").css('width', '0px');
+    // document.getElementById("mySidenav").style.width = "0";
+}
+
+$(document).ready(function() {
+  //open overlay on ready
+  openOverlay();
+  columns();    
 });

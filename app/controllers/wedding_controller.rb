@@ -1,2 +1,0 @@
-class WeddingController < ApplicationController
-end
