@@ -15,7 +15,13 @@
 
   <body>
     <%= render :partial => "layouts/header" %>
-    <%= render :partial => "layouts/navigation" %>
+    <!-- if url is not the root add the nav else leave it out -->
+    <%= 
+      unless current_page?('/')
+        render :partial => "layouts/navigation"
+      end 
+    %>
+
     <%= yield %>
     <%= render :partial => "layouts/footer" %>
   </body>
