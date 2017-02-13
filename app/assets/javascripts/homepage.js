@@ -8,64 +8,69 @@ function closeOverlay() {
   $("#homepage-overlay").css('height', '0%');
 }
 
-//displays text and link on hover for homepage columns
+// displays text and link on hover for homepage columns
+
+
+
 function columns() {
-  var Expand = (function() {
-    var tile = $('.strips__strip');
-    var tileLink = $('.strips__strip > .strip__content');
-    var tileText = tileLink.find('.strip__inner-text');
-    var stripClose = $('.strip__close');
-    
-    var expanded  = false;
+	if ($(window).width() < 760) {
+	   var Expand = (function() {
+	    var tile = $('.strips__strip');
+	    var tileLink = $('.strips__strip > .strip__content');
+	    var tileText = tileLink.find('.strip__inner-text');
+	    var stripClose = $('.strip__close');
+	    
+	    var expanded  = false;
 
-    var open = function() {
-        
-      var tile = $(this).parent();
+	    var open = function() {
+	        
+	      var tile = $(this).parent();
 
-        if (!expanded) {
-          tile.addClass('strips__strip--expanded');
-          // add delay to inner text
-          tileText.css('transition', 'all .5s .3s cubic-bezier(0.23, 1, 0.32, 1)');
-          stripClose.addClass('strip__close--show');
-          stripClose.css('transition', 'all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)');
-          expanded = true;
-        } 
-      };
-    
-    var close = function() {
-      if (expanded) {
-        tile.removeClass('strips__strip--expanded');
-        // remove delay from inner text
-        tileText.css('transition', 'all 0.15s 0 cubic-bezier(0.23, 1, 0.32, 1)');
-        stripClose.removeClass('strip__close--show');
-        stripClose.css('transition', 'all 0.2s 0s cubic-bezier(0.23, 1, 0.32, 1)')
-        expanded = false;
-      }
-    }
+	        if (!expanded) {
+	          tile.addClass('strips__strip--expanded');
+	          // add delay to inner text
+	          tileText.css('transition', 'all .5s .3s cubic-bezier(0.23, 1, 0.32, 1)');
+	          stripClose.addClass('strip__close--show');
+	          stripClose.css('transition', 'all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)');
+	          expanded = true;
+	        } 
+	      };
+	    
+	    var close = function() {
+	      if (expanded) {
+	        tile.removeClass('strips__strip--expanded');
+	        // remove delay from inner text
+	        tileText.css('transition', 'all 0.15s 0 cubic-bezier(0.23, 1, 0.32, 1)');
+	        stripClose.removeClass('strip__close--show');
+	        stripClose.css('transition', 'all 0.2s 0s cubic-bezier(0.23, 1, 0.32, 1)')
+	        expanded = false;
+	      }
+	    }
 
-      if ($(window).width() < 761) {
-        var bindActions = function() {
-          tileLink.on('click', open);
-          stripClose.on('click', close);
-        };
-        $('.strip__content').css('background-image', 'url("http://lorempixel.com/760/900/")');
-      } else {
-        var bindActions = function() {
-          tileLink.mouseenter(open);
-          tileLink.mouseleave(close);
-        };
-      }
+	      if ($(window).width() < 761) {
+	        var bindActions = function() {
+	          tileLink.on('click', open);
+	          stripClose.on('click', close);
+	        };
+	        $('.strip__content').css('background-image', 'url("http://lorempixel.com/760/900/")');
+	      } else {
+	        var bindActions = function() {
+	          tileLink.mouseenter(open);
+	          tileLink.mouseleave(close);
+	        };
+	      }
 
-      var init = function() {
-        bindActions();
-      };
+	      var init = function() {
+	        bindActions();
+	      };
 
-      return {
-        init: init
-      };
-  }());
+	      return {
+	        init: init
+	      };
+	  }());
 
-  Expand.init();
+	  Expand.init();
+	}
 }
 
 /* Set the width of the side navigation to 250px */
