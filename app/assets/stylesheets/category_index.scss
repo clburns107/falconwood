@@ -1,3 +1,17 @@
-// Place all the styles related to the DriveIn controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$black: #000;
+$lt-grey: #DDD9D1;
+$md-grey: #A4A19C;
+$drk-grey: #7F7C78;
+
+.content-container {
+	margin: 7% 7% 7% 7%;
+}
+
+.category-container {
+	margin-top: 7%;
+}
+
+.content-header {
+	padding-bottom: 5%;
+	color: $lt-grey;
+}
