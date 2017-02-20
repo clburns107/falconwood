@@ -2,6 +2,7 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 2%
 }
 
 header {
@@ -12,5 +13,21 @@ header {
 @media screen and (max-width: 374px) {
     .logo {
     	width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-img {
+    	position: absolute;
+    	z-index: 1;
+    	width: 100%
+    }
+
+    .logo {
+    	width: 15%;
+    }
+
+    header {
+    	margin: 0 0 0 0;
     }
 }
