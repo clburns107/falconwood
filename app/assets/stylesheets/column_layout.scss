@@ -58,19 +58,19 @@
 
       &:nth-child(2) {
         .strip__content {
-          background-image: url("mobile_wedding.jpg");
+          background-image: url("mobile_music.jpg");
         }
       }
       
       &:nth-child(3) {
         .strip__content {
-          background-image: url("mobile_wedding.jpg");
+          background-image: url("mobile_drivein.jpg");
         }
       }
       
       &:nth-child(4) {
         .strip__content {
-          background-image: url("mobile_wedding.jpg");
+          background-image: url("mobile_camp.jpg");
         }
       }
       
@@ -183,39 +183,41 @@
 
   @media screen and (min-width: 600px) {
     .strips {
+      &__strip {
       //changes photos to desktop versions
-      &:nth-child(1) {
-        .strip__content {
-          background-image: url("column_wedding.jpg");
-          background-position: center;
+        &:nth-child(1) {
+          .strip__content {
+            background-image: url("column_wedding.jpg");
+            background-position: center;
+          }
         }
-      }
 
-      &:nth-child(2) {
-        .strip__content {
-          background-image: url("mobile_wedding.jpg");
-          background-position: center;
+        &:nth-child(2) {
+          .strip__content {
+            background-image: url("column_music.jpg");
+            background-position: center;
+          }
         }
-      }
-      
-      &:nth-child(3) {
-        .strip__content {
-          background-image: url("mobile_wedding.jpg");
-          background-position: center;
+        
+        &:nth-child(3) {
+          .strip__content {
+            background-image: url("column_drivein.jpg");
+            background-position: center;
+          }
         }
-      }
-      
-      &:nth-child(4) {
-        .strip__content {
-          background-image: url("mobile_wedding.jpg");
-          background-position: center;
+        
+        &:nth-child(4) {
+          .strip__content {
+            background-image: url("column_camp.jpg");
+            // background-position: center;
+          }
         }
-      }
-      
-      &:nth-child(5) {
-        .strip__content {
-          background-image: url("mobile_wedding.jpg");
-          background-position: center;
+        
+        &:nth-child(5) {
+          .strip__content {
+            background-image: url("column_wedding.jpg");
+            background-position: center;
+          }
         }
       }
       .strip__content {
