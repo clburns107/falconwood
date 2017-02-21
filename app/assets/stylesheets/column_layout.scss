@@ -48,6 +48,38 @@
       &:nth-child(5) {
         left: 80vw;
       }
+
+      //photos change for media queries
+      &:nth-child(1) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+        }
+      }
+
+      &:nth-child(2) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+        }
+      }
+      
+      &:nth-child(3) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+        }
+      }
+      
+      &:nth-child(4) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+        }
+      }
+      
+      &:nth-child(5) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+        }
+      }
+
       
       @include break {
         min-height: 20vh;
@@ -143,15 +175,63 @@
         @include easeOut;
       }
     }
+
+    .strip__title {
+      font-size: 1.25em;
+    }
   }
 
   @media screen and (min-width: 600px) {
-    // hides the detail text of the column
     .strips {
+      //changes photos to desktop versions
+      &:nth-child(1) {
+        .strip__content {
+          background-image: url("column_wedding.jpg");
+          background-position: center;
+        }
+      }
+
+      &:nth-child(2) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+          background-position: center;
+        }
+      }
+      
+      &:nth-child(3) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+          background-position: center;
+        }
+      }
+      
+      &:nth-child(4) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+          background-position: center;
+        }
+      }
+      
+      &:nth-child(5) {
+        .strip__content {
+          background-image: url("mobile_wedding.jpg");
+          background-position: center;
+        }
+      }
       .strip__content {
         .strip__inner-text {
           transform: translate(-50%,-50%) scale(0.85);
+          background-position: center;
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    //increases size of non-hover title
+    .strips {
+      .strip__title {
+        font-size: 1.5em;
       }
     }
   }
