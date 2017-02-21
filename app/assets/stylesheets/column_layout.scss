@@ -1,3 +1,7 @@
+$black: #000;
+$lt-grey: #DDD9D1;
+$md-grey: #A4A19C;
+$drk-grey: #7F7C78;
 // *************** RESPONSIVE 5 COLUMN LAYOUT *******************
   @mixin easeOut {
     transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -178,6 +182,7 @@
 
     .strip__title {
       font-size: 1.25em;
+      color: white;
     }
   }
 
@@ -233,7 +238,7 @@
     //increases size of non-hover title
     .strips {
       .strip__title {
-        font-size: 1.5em;
+        font-size: 2em;
       }
     }
   }
