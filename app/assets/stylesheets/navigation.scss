@@ -50,7 +50,13 @@ $drk-grey: #7F7C78;
     margin-left: 2%;
     margin-top: 1%;
     margin-bottom: 2%;
-    color: $black;
+    color: white;
+  }
+
+  a.tab-link {
+    text-decoration: none;
+    color: white;
+    padding: 2% 4%;
   }
 
   .mobile-nav-menu {
@@ -59,8 +65,13 @@ $drk-grey: #7F7C78;
     margin-left: auto;
     margin-right: auto;
     background-color: $drk-grey;
+    margin-bottom: 5%;
   }
 
+  .cat-index-nav {
+    text-align: center;
+    margin: 4%;
+  }
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
       transition: margin-left .5s;
@@ -71,5 +82,21 @@ $drk-grey: #7F7C78;
   @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (min-width: 600px) {
+    .cat-index-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      margin-left: 2%;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      color: white;
+      width: 35%;
+      text-align: right;
+    }
   }
 // *************** SIDE NAVIGATION MENU *******************

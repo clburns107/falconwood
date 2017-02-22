@@ -20,3 +20,31 @@ $drk-grey: #7F7C78;
 	width: 100%;
 	height: auto;
 }
+
+// *************************** arrow*****************
+.down-arrow-container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.line-separator {
+	display: block;
+}
+
+.side-line {
+    display: inline-block;
+    width: 25%;
+}
+
+.triangle {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    transform: rotate( -136deg);
+    transform-origin: center center;
+    border-top: 1px solid $lt-grey;
+    border-left: 1px solid $lt-grey;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom: -3px;
+}

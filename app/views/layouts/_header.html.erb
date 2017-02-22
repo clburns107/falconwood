@@ -2,10 +2,11 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 header-img">
-        <%= link_to root_path do %>
-		      <%= image_tag "falconwood-logo-150.png", class:"logo hidden-sm-down"%>
-		      <%= image_tag "falconwood-logo-white-150.png", class:"logo hidden-md-up"%>
-		    <% end %>
+        <div class="logo-container">
+          <%= link_to root_path do %>
+  		      <%= image_tag "falconwood-logo-white-150.png", class:"logo"%>
+  		    <% end %>
+        </div>
       </div>
     </div>
   </div>
