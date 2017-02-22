@@ -38,8 +38,8 @@ $drk-grey: #7F7C78;
 
 .triangle {
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     transform: rotate( -136deg);
     transform-origin: center center;
     border-top: 1px solid $lt-grey;
@@ -47,4 +47,11 @@ $drk-grey: #7F7C78;
     margin-left: -3px;
     margin-right: -3px;
     margin-bottom: -3px;
+}
+
+@media screen and (min-width: 768px) {
+	.triangle {
+		height: 40px;
+		width: 40px;
+	}
 }
