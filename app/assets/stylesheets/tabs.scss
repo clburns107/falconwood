@@ -1,57 +1,523 @@
 @import "variables";
-/*----- Tabs -----*/
-.tabs {
-    width:100%;
-    display:inline-block;
+/* Standard Tab Styles */
+
+//tab width and positioning
+ul.tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
 }
- 
-    /*----- Tab Links -----*/
-    /* Clearfix */
-    .tab-links:after {
-        display:block;
-        clear:both;
-        content:'';
-    }
- 
-    .tab-links li {
-        margin:0px 5px;
-        float:left;
-        list-style:none;
-    }
- 
-        .tab-links a {
-            padding:9px 15px;
-            display:inline-block;
-            border-radius:3px 3px 0px 0px;
-            background:#7FB5DA;
-            font-size:16px;
-            font-weight:600;
-            color:#4c4c4c;
-            transition:all linear 0.15s;
-        }
- 
-        .tab-links a:hover {
-            background:#a7cce5;
-            text-decoration:none;
-        }
- 
-    li.active a, li.active a:hover {
-        background:#fff;
-        color:#4c4c4c;
-    }
- 
-    /*----- Content of Tabs -----*/
-    .tab-content {
-        padding:15px;
-        border-radius:3px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-        background:#fff;
-    }
- 
-        .tab {
-            display:none;
-        }
- 
-        .tab.active {
-            display:block;
-        }
+
+//tab full width for mobile
+.tab-image {
+  width: 100%;
+}
+
+.full-width-img {
+  width: 100%;
+}
+
+//change tab color on hover
+.tab-title:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+.tab-title:active {
+  text-decoration: none;
+}
+
+.tab-title:focus {
+  text-decoration: none;
+}
+
+.tab-title:visited {
+  text-decoration: none;
+}
+
+//fade-in/out tab content
+.tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
+  padding-top: 5%;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//tab title styling
+.tab-title {
+  display: inline-block;
+  color: #666;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  transition: 0.3s;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1.5px solid #666;
+  position: relative;
+  padding: 10px 0;
+  bottom: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+// active tab title styling
+.tab-title:focus,
+.tab-title.active {
+  color: #F06924 !important;
+  text-decoration: none;
+  //bottom border down arrow for active tab
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+  }
+  &:before {
+    border-top: 10px solid #666;
+  }
+  &:after {
+    border-top: 10px solid white;
+    margin-top: -2px;
+    z-index: 1;
+  }
+}
+
+
+/* End Standard Tab Styles */
+
+
+/* Article Title Styling */
+
+// article headline
+.headline-title {
+  font-weight: bold;
+  color: #003366;
+  padding: 6%;
+}
+
+// article headline
+.headline-sub-title {
+  font-weight: bold;
+  color: #F06924;
+}
+
+
+/* End Article Title Styling */
+
+
+/* Speaker Page Tab Styles */
+
+// speaker image
+.circle-image {
+  border-radius: 50%;
+}
+
+// speaker description container
+.speaker-container {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+// speaker image description
+.description {
+  color: #F06924;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+// speaker name
+.speaker-name {
+  color: #003366;
+  font-weight: 600;
+}
+
+// speaker title
+.speaker-title {
+  font-style: italic;
+  color: #ccc;
+}
+
+
+/* End Speaker Page Tab Styles */
+
+
+/* Committee Members Styling */
+
+//top spacing for committee
+.committee-container {
+  margin-top: 3%;
+}
+
+// member placement
+.member {
+  text-align: center;
+  margin-right: 5%;
+}
+
+//member title styling
+.member-title {
+  font-weight: bold;
+  color: #003366;
+}
+
+//member subtitle styling
+.member-subtitle {
+  font-style: italic;
+  color: #ccc;
+}
+
+
+/* End Committee Members Styling */
+
+
+/* Schedule Dropdown Styling */
+
+// grey underline with padding for schedule event
+.schedule {
+  border-bottom: .5px solid #ccc;
+  padding-bottom: 15%;
+  text-align: center;
+}
+
+//change tab titles from grey to blue
+.tab-title.schedule-tab {
+  color: #003366;
+}
+
+//tab borders
+#first-tab,
+#second-tab,
+#third-tab,
+#fourth-tab {
+  border-left: 1.5px solid #666;
+  border-top: 1.5px solid #666;
+  border-right: 1.5px solid #666;
+}
+
+//padding under each tab for mobile
+.borders {
+  padding-bottom: 5%;
+}
+
+//hide schedule details until clicked
+.schedule-details {
+  display: none;
+}
+
+//dropdown arrow
+.fa-angle-down {
+  display: inline-block;
+  left: 45%;
+  bottom: 55px;
+  position: relative;
+  color: #003366;
+  -webkit-transition: .75s ease-in-out;
+  -moz-transition: .75s ease-in-out;
+  -o-transition: .75s ease-in-out;
+  transition: .75s ease-in-out;
+}
+
+//animates dropdown arrow from down to up
+.fa-angle-down.animate {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+//active scheduel tab title styling
+.tab-title.schedule-tab:focus,
+.tab-title.schedule-tab.active {
+  color: #FFF !important;
+  background-color: #F06924;
+  &:after {
+    border-top: 10px solid #F06924;
+  }
+}
+
+//schedule details title styling
+.details-title h5 {
+  font-weight: 600;
+  color: #003366;
+  text-align: center;
+  padding-top: 20px;
+}
+
+//event styling
+.event {
+  margin-bottom: 2.5%;
+}
+
+//event styling
+.event-detail {
+  margin-bottom: 5%;
+}
+
+//mobile detail image styling
+.mobile-detail-image {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  position: relative;
+}
+
+.details-description {
+  text-align: center;
+}
+
+
+/* End Schedule Dropdown Styling */
+
+
+/* Registration Form Tab Styling */
+
+//form tab title stylings
+.tab-title.one-tab {
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+//active tab title styling
+.tab-title.one-tab:focus,
+.tab-title.one-tab.active {
+  //bottom border down arrow for active tab
+  &:before,
+  &:after {
+    left: 15%;
+  }
+}
+
+.one-tab:hover {
+  cursor: default;
+}
+
+
+/* End Registration Form Tab Styling */
+
+//*********************Media Queries*****************//
+// Devices 375px wide and up
+@media (min-width: 375px) {}
+
+// Devices 768px wide and up
+@media (min-width: 768px) {
+  /* Standard Tab Styles */
+  //tab width and positioning
+  ul.tabs {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  //contstrains tabs and tab content
+  // .tab-container {
+  //   max-width: 90%;
+  // }
+  //tab title
+  .tab-title {
+    padding: 20px 0px;
+    font-size: 1rem;
+  }
+  //tab image
+  .tab-image {
+    width: 100%;
+  }
+  //tab image float right
+  .right-image {
+    float: right;
+    margin-left: 5%;
+  }
+  //tab image float left
+  .left-image {
+    float: left;
+    margin-right: 5%;
+  }
+  //1 tab
+  ul.tabs li.one {
+    float: left;
+    width: 100%;
+  }
+  //float 2 tabs side by side
+  ul.tabs li.two {
+    float: left;
+    width: 50%;
+  }
+  //float 3 tabs side by side
+  ul.tabs li.three {
+    float: left;
+    width: 33%;
+  }
+  //float 4 tabs side by side/
+  ul.tabs li.four {
+    float: left;
+    width: 25%;
+  }
+  /* End Standard Tab Styles*/
+  /* Article Title Styling */
+  //article headline
+  .headline-title {
+    padding: 0px;
+  }
+  /* End Article Title Styling */
+  /* Schedule Dropdown Styling */
+  // grey underline with padding for schedule event
+  .schedule {
+    border-bottom: .5px solid #ccc;
+    padding-bottom: 15%;
+    text-align: left;
+  }
+  // padding above grey underline for schedule event
+  .headline-title.schedule {
+    padding-bottom: 2%;
+  }
+  //1st-3rd tab borders
+  #first-tab,
+  #second-tab,
+  #third-tab {
+    border-left: none;
+    border-top: none;
+    border-right: 1.5px solid #666;
+  }
+  //4th tab borders
+  #fourth-tab {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+  }
+  //schedule box border
+  .main-content.schedule-content {
+    padding-right: 0px;
+    padding-left: 0px;
+    border: solid 1.5px #666;
+    width: 100%;
+  }
+  //schedule box inner content padding
+  .tabcontent.events {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  //padding under each tab for mobile
+  .borders {
+    padding-bottom: 0;
+  }
+  //drop down arrow positioning
+  .fa-angle-down {
+    display: inline-block;
+    float: right;
+    left: auto;
+    position: relative;
+  }
+  //schedule details title styling
+  .details-title h5 {
+    text-align: left;
+    padding-top: 0px;
+  }
+  //details description styling
+  .details-description {
+    text-align: left;
+  }
+  //event styling
+  .event-detail {
+    margin-bottom: 0;
+  }
+  /* End Schedule Dropdown Styling */
+}
+
+// Devices 992px wide and up
+@media (min-width: 992px) {
+  /* Standard Tab Styles */
+  //contstrains tabs and tab content
+  // .tab-container {
+  //   max-width: 85%;
+  // }
+  // //tab image
+  // .tab-image{
+  //     width:  50%;
+  // }
+  /* End Standard Tab Styles */
+  /* Speaker Page Tab Styles */
+  //speaker titles
+  .speaker-container {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+  /* End Speaker Page Tab Styles */
+}
+
+//Devices 992-1199px wide
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Devices 1200px wide and up
+@media (min-width: 1200px) {
+  /* Standard Tab Styles */
+  //contstrains tabs and tab content
+  // .tab-container {
+  //   max-width: 70%;
+  // }
+  //expand tab width and center
+  ul.tabs {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* End Standard Tab Styles */
+}
+
+//Devices 1200-1400px wide
+@media (min-width: 1200px) and (max-width: 1400px) {}
+
+//Devices 1401px wide and up
+@media (min-width: 1401px) {
+  /* Standard Tab Styles */
+  //contstrains tabs and tab content
+  // .tab-container {
+  //   max-width: 55%;
+  // }
+  // //tab image
+  // .tab-image{
+  //     width: 40%;
+  // }
+  /* End Standard Tab Styles */
+}
+
+//Devices 1920px wide and up
+@media (min-width: 1920px) {
+  /* Standard Tab Styles */
+  //contstrains tabs and tab content
+  // .tab-container {
+  //   max-width: 50%;
+  // }
+  //float 4 tabs side by side/
+  ul.tabs li.four {
+    width: 25%;
+  }
+  /* End Standard Tab Styles */
+}
+
+//*********************Media Queries*****************//
