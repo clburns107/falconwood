@@ -336,9 +336,9 @@ ul.tabs {
     margin-right: 0;
   }
   //contstrains tabs and tab content
-  // .tab-container {
-  //   max-width: 90%;
-  // }
+  .tab-container {
+    max-width: 90%;
+  }
   //tab title
   .tab-title {
     padding: 20px 0px;
@@ -453,9 +453,9 @@ ul.tabs {
 @media (min-width: 992px) {
   /* Standard Tab Styles */
   //contstrains tabs and tab content
-  // .tab-container {
-  //   max-width: 85%;
-  // }
+  .tab-container {
+    max-width: 85%;
+  }
   // //tab image
   // .tab-image{
   //     width:  50%;
@@ -477,9 +477,9 @@ ul.tabs {
 @media (min-width: 1200px) {
   /* Standard Tab Styles */
   //contstrains tabs and tab content
-  // .tab-container {
-  //   max-width: 70%;
-  // }
+  .tab-container {
+    max-width: 70%;
+  }
   //expand tab width and center
   ul.tabs {
     width: 100%;
@@ -496,9 +496,9 @@ ul.tabs {
 @media (min-width: 1401px) {
   /* Standard Tab Styles */
   //contstrains tabs and tab content
-  // .tab-container {
-  //   max-width: 55%;
-  // }
+  .tab-container {
+    max-width: 55%;
+  }
   // //tab image
   // .tab-image{
   //     width: 40%;
@@ -510,9 +510,9 @@ ul.tabs {
 @media (min-width: 1920px) {
   /* Standard Tab Styles */
   //contstrains tabs and tab content
-  // .tab-container {
-  //   max-width: 50%;
-  // }
+  .tab-container {
+    max-width: 50%;
+  }
   //float 4 tabs side by side/
   ul.tabs li.four {
     width: 25%;

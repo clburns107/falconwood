@@ -19,10 +19,15 @@
     <%= 
       unless current_page?('/')
         render :partial => "layouts/navigation"
-        render :partial => "layouts/footer"
       end 
     %>
 
     <%= yield %>
+
+    <%= 
+      unless current_page?('/')
+        render :partial => "layouts/footer"
+      end 
+    %>
   </body>
 </html>

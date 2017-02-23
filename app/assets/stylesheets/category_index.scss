@@ -1,22 +1,22 @@
 @import "variables";
 
-.content-container {
-	margin: 7% 7% 7% 7%;
-}
+// .content-container {
+// 	margin: 7% 7% 7% 7%;
+// }
 
-.category-container {
-	margin-top: 7%;
-}
+// .category-container {
+// 	margin-top: 7%;
+// }
 
-.content-header {
-	padding-bottom: 5%;
-	color: $lt-grey;
-}
+// .content-header {
+// 	padding-bottom: 5%;
+// 	color: $lt-grey;
+// }
 
-.index-header-img {
-	width: 100%;
-	height: auto;
-}
+// .index-header-img {
+// 	width: 100%;
+// 	height: auto;
+// }
 
 .about-img {
 	width: 250px;
@@ -25,34 +25,60 @@
 	margin-left: auto;
 	padding: 2%;
 }
+// *************************** category sections *****************
+	div#banner {
+		height: 100vh;
+		background: $black;
+	}
 
-// *************************** arrow*****************
-.down-arrow-container {
-	margin-right: auto;
-	margin-left: auto;
-}
+	.full-height-header-img {
+		height: 100vh
+	}
 
-.line-separator {
-	display: block;
-}
+	 
+	div#about {
+		height: 100vh;
+		background: white;
+	}
 
-.side-line {
-    display: inline-block;
-    width: 25%;
-}
+	div#details {
+		background: $black;
+	}
 
-.triangle {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    transform: rotate( -136deg);
-    transform-origin: center center;
-    border-top: 1px solid $lt-grey;
-    border-left: 1px solid $lt-grey;
-    margin-left: -3px;
-    margin-right: -3px;
-    margin-bottom: -3px;
-}
+	div#contact-us {
+		height: 100vh;
+		background: white;
+	}
+// *************************** category sections *****************
+
+// *************************** arrow *****************
+	.down-arrow-container {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.line-separator {
+		display: block;
+	}
+
+	.side-line {
+	    display: inline-block;
+	    width: 25%;
+	}
+
+	.triangle {
+	    display: inline-block;
+	    height: 30px;
+	    width: 30px;
+	    transform: rotate( -136deg);
+	    transform-origin: center center;
+	    border-top: 1px solid $lt-grey;
+	    border-left: 1px solid $lt-grey;
+	    margin-left: -3px;
+	    margin-right: -3px;
+	    margin-bottom: -3px;
+	}
+// *************************** arrow *****************
 
 @media screen and (min-width: 768px) {
 	.triangle {
