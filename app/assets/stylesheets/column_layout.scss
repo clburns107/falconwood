@@ -1,7 +1,5 @@
-$black: #000;
-$lt-grey: #DDD9D1;
-$md-grey: #A4A19C;
-$drk-grey: #7F7C78;
+@import "variables";
+
 // *************** RESPONSIVE 5 COLUMN LAYOUT *******************
   @mixin easeOut {
     transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -57,30 +55,35 @@ $drk-grey: #7F7C78;
       &:nth-child(1) {
         .strip__content {
           background-image: url("mobile_wedding.jpg");
+          background-repeat: no-repeat;
         }
       }
 
       &:nth-child(2) {
         .strip__content {
           background-image: url("mobile_music.jpg");
+          background-repeat: no-repeat;
         }
       }
       
       &:nth-child(3) {
         .strip__content {
           background-image: url("mobile_drivein.jpg");
+          background-repeat: no-repeat;
         }
       }
       
       &:nth-child(4) {
         .strip__content {
           background-image: url("mobile_camp.jpg");
+          background-repeat: no-repeat;
         }
       }
       
       &:nth-child(5) {
         .strip__content {
           background-image: url("mobile_wedding.jpg");
+          background-repeat: no-repeat;
         }
       }
 
@@ -186,6 +189,10 @@ $drk-grey: #7F7C78;
     }
   }
 
+  .index-container {
+    overflow: hidden;
+  }
+
   @media screen and (min-width: 600px) {
     .strips {
       &__strip {
@@ -194,6 +201,7 @@ $drk-grey: #7F7C78;
           .strip__content {
             background-image: url("column_wedding.jpg");
             background-position: center;
+            background-repeat: no-repeat;
           }
         }
 
@@ -201,6 +209,7 @@ $drk-grey: #7F7C78;
           .strip__content {
             background-image: url("column_music.jpg");
             background-position: center;
+            background-repeat: no-repeat;
           }
         }
         
@@ -208,6 +217,7 @@ $drk-grey: #7F7C78;
           .strip__content {
             background-image: url("column_drivein.jpg");
             background-position: center;
+            background-repeat: no-repeat;
           }
         }
         
@@ -215,6 +225,7 @@ $drk-grey: #7F7C78;
           .strip__content {
             background-image: url("column_camp.jpg");
             background-position: right;
+            background-repeat: no-repeat;
           }
         }
         
@@ -222,6 +233,7 @@ $drk-grey: #7F7C78;
           .strip__content {
             background-image: url("column_wedding.jpg");
             background-position: center;
+            background-repeat: no-repeat;
           }
         }
       }
@@ -229,6 +241,7 @@ $drk-grey: #7F7C78;
         .strip__inner-text {
           transform: translate(-50%,-50%) scale(0.85);
           background-position: center;
+          background-repeat: no-repeat;
         }
       }
     }
