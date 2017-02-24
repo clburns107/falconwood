@@ -1,0 +1,18 @@
+.half-col-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.half-col-img {
+		display: initial;
+		float: right;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.half-col-img {
+		width: 55%;
+	}
+}

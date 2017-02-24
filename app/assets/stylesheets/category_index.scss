@@ -1,16 +1,12 @@
 @import "variables";
 
-// .content-container {
-// 	margin: 7% 7% 7% 7%;
-// }
-
-.category-container {
-	margin-top: 7%;
+.content-container {
+	margin-top: 10% ;
 }
 
 .content-header {
 	padding-bottom: 5%;
-	color: $lt-grey;
+	color: $blue;
 }
 
 .index-header-img {
@@ -51,38 +47,38 @@
 // 	}
 // // *************************** category sections *****************
 
-// *************************** arrow *****************
-	.down-arrow-container {
-		margin-right: auto;
-		margin-left: auto;
-	}
+// // *************************** arrow *****************
+// 	.down-arrow-container {
+// 		margin-right: auto;
+// 		margin-left: auto;
+// 	}
 
-	.line-separator {
-		display: block;
-	}
+// 	.line-separator {
+// 		display: block;
+// 	}
 
-	.side-line {
-	    display: inline-block;
-	    width: 25%;
-	}
+// 	.side-line {
+// 	    display: inline-block;
+// 	    width: 25%;
+// 	}
 
-	.triangle {
-	    display: inline-block;
-	    height: 30px;
-	    width: 30px;
-	    transform: rotate( -136deg);
-	    transform-origin: center center;
-	    border-top: 1px solid $lt-grey;
-	    border-left: 1px solid $lt-grey;
-	    margin-left: -3px;
-	    margin-right: -3px;
-	    margin-bottom: -3px;
-	}
-// *************************** arrow *****************
+// 	.triangle {
+// 	    display: inline-block;
+// 	    height: 30px;
+// 	    width: 30px;
+// 	    transform: rotate( -136deg);
+// 	    transform-origin: center center;
+// 	    border-top: 1px solid $lt-grey;
+// 	    border-left: 1px solid $lt-grey;
+// 	    margin-left: -3px;
+// 	    margin-right: -3px;
+// 	    margin-bottom: -3px;
+// 	}
+// // *************************** arrow *****************
 
-@media screen and (min-width: 768px) {
-	.triangle {
-		height: 40px;
-		width: 40px;
-	}
-}
+// @media screen and (min-width: 768px) {
+// 	.triangle {
+// 		height: 40px;
+// 		width: 40px;
+// 	}
+// }
