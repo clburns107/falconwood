@@ -14,10 +14,11 @@
   </head>
 
   <body>
-    <%= render :partial => "layouts/header" %>
-    <!-- if url is not the root add the nav else leave it out -->
+    <!-- if url is the root include header without nav else include header with nav -->
     <%= 
-      unless current_page?('/')
+      if current_page?('/')
+        render :partial => "layouts/header"
+      else
         render :partial => "layouts/navigation"
       end 
     %>

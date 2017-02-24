@@ -1,22 +1,22 @@
 @import "variables";
 
-// .content-container {
-// 	margin: 7% 7% 7% 7%;
-// }
+.content-container {
+	margin: 7% 7% 7% 7%;
+}
 
-// .category-container {
-// 	margin-top: 7%;
-// }
+.category-container {
+	margin-top: 7%;
+}
 
-// .content-header {
-// 	padding-bottom: 5%;
-// 	color: $lt-grey;
-// }
+.content-header {
+	padding-bottom: 5%;
+	color: $lt-grey;
+}
 
-// .index-header-img {
-// 	width: 100%;
-// 	height: auto;
-// }
+.index-header-img {
+	width: 100%;
+	height: auto;
+}
 
 .about-img {
 	width: 250px;
@@ -25,31 +25,31 @@
 	margin-left: auto;
 	padding: 2%;
 }
-// *************************** category sections *****************
-	div#banner {
-		height: 100vh;
-		background: $black;
-	}
+// // *************************** category sections *****************
+// 	div#banner {
+// 		height: 100vh;
+// 		background: $black;
+// 	}
 
-	.full-height-header-img {
-		height: 100vh
-	}
+// 	.full-height-header-img {
+// 		height: 100vh
+// 	}
 
 	 
-	div#about {
-		height: 100vh;
-		background: white;
-	}
+// 	div#about {
+// 		height: 100vh;
+// 		background: white;
+// 	}
 
-	div#details {
-		background: $black;
-	}
+// 	div#details {
+// 		background: $black;
+// 	}
 
-	div#contact-us {
-		height: 100vh;
-		background: white;
-	}
-// *************************** category sections *****************
+// 	div#contact-us {
+// 		height: 100vh;
+// 		background: white;
+// 	}
+// // *************************** category sections *****************
 
 // *************************** arrow *****************
 	.down-arrow-container {
