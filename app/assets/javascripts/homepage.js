@@ -22,7 +22,5 @@ function closeNav() {
 }
 
 $(document).ready(function() {
-  //open overlay on ready
-  openOverlay();
-  // columns();    
+  openOverlay();   
 });
