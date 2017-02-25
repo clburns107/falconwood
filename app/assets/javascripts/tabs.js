@@ -1,17 +1,3 @@
-// $(document).ready(function(){
-  
-//   $('ul.tabs li').click(function(){
-//     var tab_id = $(this).attr('data-tab');
-
-//     $('ul.tabs li').removeClass('current');
-//     $('.tab-content').removeClass('current');
-
-//     $(this).addClass('current');
-//     $("#"+tab_id).addClass('current');
-//   })
-
-// })
-
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -33,5 +19,10 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.addEventListener("DOMContentLoaded", function(event) { 
+  document.getElementById("defaultOpen").click();
+});
+
+// $(document).ready(function() {
+//   $("#defaultOpen").trigger("click");
+// });
