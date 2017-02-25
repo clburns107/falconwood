@@ -1,72 +1,121 @@
 @import "variables";
 
-// full tab container
-ul.tabs{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  width: 100%;
+// // full tab container
+// ul.tabs{
+//   margin: 0px;
+//   padding: 0px;
+//   list-style: none;
+//   width: 100%;
+// }
+
+// // individual tab
+// ul.tabs li{
+//   background: none;
+//   color: $drk-grey;
+//   display: inline-block;
+//   padding: 15px 15px;
+//   cursor: pointer;
+//   width: 100%;
+//   text-align: center;
+//   border: solid $drk-grey 1px;
+// }
+
+// ul.tabs li.current{
+//   background: $blue;
+//   color: white;
+// }
+
+// .tab-content{
+//   display: none;
+//   background: $black;
+//   padding: 15px;
+//   width: 100%;
+// }
+
+// .tab-content.current{
+//   display: inherit;
+// }
+
+// .tab-content-header {
+//   padding-top: 5%;
+//   padding-bottom: 5%;
+//   color: $blue;
+// }
+
+// @media screen and (min-width: 768px) {
+//   // three individual tabs
+//   ul.tabs li.three{
+//     float: left;
+//     width: 33%;
+//   }
+
+//   // four individual tabs
+//   ul.tabs li.four{
+//     float: left;
+//     width: 25%;
+//   }
+
+//   // five individual tabs
+//   ul.tabs li.five{
+//     float: left;
+//     width: 20%;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .right-side-txt{
+//     padding-right: 10%;
+//     padding-left: 10%;
+//   }
+// }
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
-// individual tab
-ul.tabs li{
-  background: none;
-  color: $drk-grey;
-  display: inline-block;
-  padding: 15px 15px;
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  border: solid $drk-grey 1px;
-}
-
-ul.tabs li.current{
-  background: $blue;
-  color: white;
-}
-
-.tab-content{
-  display: none;
-  background: $black;
-  padding: 15px;
-  width: 100%;
-}
-
-.tab-content.current{
-  display: inherit;
-}
-
-.tab-content-header {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: $blue;
-}
-
-@media screen and (min-width: 768px) {
-  // three individual tabs
-  ul.tabs li.three{
+/* Style the links inside the tab */
+div.tab a {
     float: left;
-    width: 33%;
-  }
-
-  // four individual tabs
-  ul.tabs li.four{
-    float: left;
-    width: 25%;
-  }
-
-  // five individual tabs
-  ul.tabs li.five{
-    float: left;
-    width: 20%;
-  }
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
-@media screen and (min-width: 1200px) {
-  .right-side-txt{
-    padding-right: 10%;
-    padding-left: 10%;
-  }
+/* Change background color of links on hover */
+div.tab a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
