@@ -22,7 +22,3 @@ function openCity(evt, cityName) {
 document.addEventListener("DOMContentLoaded", function(event) { 
   document.getElementById("defaultOpen").click();
 });
-
-// $(document).ready(function() {
-//   $("#defaultOpen").trigger("click");
-// });

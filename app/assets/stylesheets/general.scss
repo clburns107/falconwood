@@ -1,8 +1,14 @@
 @import "variables";
 
+@font-face {
+  font-family: 'Admiration-Pains';
+  src: url(../fonts/Admiration-Pains.ttf);
+}
+
 body {
 	background-color: white;
 	color: $drk-grey;
+	font-family: "Admiration Pains";
 }
 
 .m-0 {
