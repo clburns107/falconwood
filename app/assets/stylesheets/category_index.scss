@@ -21,73 +21,9 @@
     margin-left: auto;
     margin-right: auto;
 }
-// // *************************** category sections *****************
-// 	div#banner {
-// 		height: 100vh;
-// 		background: $black;
-// 	}
-
-// 	.full-height-header-img {
-// 		height: 100vh
-// 	}
-
-	 
-// 	div#about {
-// 		height: 100vh;
-// 		background: white;
-// 	}
-
-// 	div#details {
-// 		background: $black;
-// 	}
-
-// 	div#contact-us {
-// 		height: 100vh;
-// 		background: white;
-// 	}
-// // *************************** category sections *****************
-
-// // *************************** arrow *****************
-// 	.down-arrow-container {
-// 		margin-right: auto;
-// 		margin-left: auto;
-// 	}
-
-// 	.line-separator {
-// 		display: block;
-// 	}
-
-// 	.side-line {
-// 	    display: inline-block;
-// 	    width: 25%;
-// 	}
-
-// 	.triangle {
-// 	    display: inline-block;
-// 	    height: 30px;
-// 	    width: 30px;
-// 	    transform: rotate( -136deg);
-// 	    transform-origin: center center;
-// 	    border-top: 1px solid $lt-grey;
-// 	    border-left: 1px solid $lt-grey;
-// 	    margin-left: -3px;
-// 	    margin-right: -3px;
-// 	    margin-bottom: -3px;
-// 	}
-// // *************************** arrow *****************
-
-// @media screen and (min-width: 768px) {
-// 	.triangle {
-// 		height: 40px;
-// 		width: 40px;
-// 	}
-// }
 
 @media screen and (min-width: 768px) {
 	.about-img {
 		width: 80%;
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
 	}
 }

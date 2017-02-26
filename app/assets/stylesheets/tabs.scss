@@ -1,74 +1,5 @@
 @import "variables";
 
-// // full tab container
-// ul.tabs{
-//   margin: 0px;
-//   padding: 0px;
-//   list-style: none;
-//   width: 100%;
-// }
-
-// // individual tab
-// ul.tabs li{
-//   background: none;
-//   color: $drk-grey;
-//   display: inline-block;
-//   padding: 15px 15px;
-//   cursor: pointer;
-//   width: 100%;
-//   text-align: center;
-//   border: solid $drk-grey 1px;
-// }
-
-// ul.tabs li.current{
-//   background: $blue;
-//   color: white;
-// }
-
-// .tab-content{
-//   display: none;
-//   background: $black;
-//   padding: 15px;
-//   width: 100%;
-// }
-
-// .tab-content.current{
-//   display: inherit;
-// }
-
-// .tab-content-header {
-//   padding-top: 5%;
-//   padding-bottom: 5%;
-//   color: $blue;
-// }
-
-// @media screen and (min-width: 768px) {
-//   // three individual tabs
-//   ul.tabs li.three{
-//     float: left;
-//     width: 33%;
-//   }
-
-//   // four individual tabs
-//   ul.tabs li.four{
-//     float: left;
-//     width: 25%;
-//   }
-
-//   // five individual tabs
-//   ul.tabs li.five{
-//     float: left;
-//     width: 20%;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .right-side-txt{
-//     padding-right: 10%;
-//     padding-left: 10%;
-//   }
-// }
-
 /* Style the tab */
 div.tab {
     overflow: hidden;
@@ -80,28 +11,44 @@ div.tab {
 div.tab a {
     float: left;
     display: block;
-    color: black;
+    color: $drk-grey;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
 }
 
-/* Change background color of links on hover */
-div.tab a:hover {
-    background-color: #ddd;
+.tablinks {
+    width: 100%;
+    text-align: center;
+    color: $drk-grey;
+    text-decoration: none;
+    font-family: 'Admiration Pains', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border: $drk-grey solid 0.25px;
+}
+
+.tablinks:hover {
+    background-color: $drk-grey;
+    color: white;
+    text-decoration: none;
+}
+
+.tablinks:focus, .active {
+    background-color: $blue;
+    color: white;
+    text-decoration: none;
 }
 
 /* Create an active/current tablink class */
 div.tab a:focus, .active {
-    background-color: #ccc;
+    background-color: $blue;
+    color: white;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
     -webkit-animation: fadeEffect 1s;
@@ -116,6 +63,20 @@ div.tab a:focus, .active {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media screen and (min-width: 768px) {
+  .five {
+    width: 20%;
+  }
+
+  .four {
+    width: 25%;
+  }
+
+  .three {
+    width: 33%;
+  }
 }
 
 
