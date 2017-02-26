@@ -20,3 +20,26 @@ body {
 .p-0 {
 	padding: 0;
 }
+
+.p-t-10 {
+	padding-top: 10%;
+}
+
+.p-b-10 {
+	padding-bottom: 10%;
+}
+
+.admiration-font {
+	font-family: "Admiration Pains", sans-serif;
+	padding-top: 30px;
+}
+
+.yellow {
+	color: $yellow;
+}
+
+.blue {
+	color: $blue;
+}
+
+hr {border: 1px solid $drk-grey;}
