@@ -1,113 +1,144 @@
 <div class="container-fluid">
-	<div class="row">
-		<div>
-			<%= image_tag "index_wedding.jpg", class:"index-header-img" %>
-		</div>
-		<div class="down-arrow-container">
-			<div class="line-separator">
-			    <div class="side-line"> </div>
-			    <div class="triangle"> </div>
-			    <div class="side-line"> </div>
-			</div>
-		</div>
-	</div>
+  <div class="row">
+    <div>
+      <%= image_tag "2560x1200wedding.jpg", class:"index-header-img" %>
+    </div>
+  </div>
 </div>
-<div class="container category-container">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="content-container">
-				<h2 class="text-center content-header">Drive-In</h2>
-				<p>Kick back and relive your childhood summer days at the drive-in! Falconwood Park features a 37 foot screen and Drive-In Passes that allow for patrons to park in our 150 space drive-in parking lot on a first come first serve basis. Once the main lot is full Park and Walk Passes will be available to patrons until the show is sold out.  Park and Walk patrons are welcome to park in the side lot and walk to our viewing area at the front of the green with blankets and camping chairs.</p>
+<div id="about"></div>
+<div class="container">
+  <div class="row content-container">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="text-center content-header">About our</h1>
+      <h1 class="text-center content-header">Weddings</h1>
+      <%= image_tag "about-wedding.png", class:"about-img"%>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<p>Our Drive-In features and outdoor sound system as well as an FM radio transmitter so you can feel free to watch the movie from the comfort of your own vehicle or lounge outside the car and enjoy it with your friends.</p>
-			</div>
-			<div>
-				<h2 class="text-center content-header">2017 Spring/Summer Lineup Coming Soon!</h2>
-			</div>
-		</div>
-	</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
 </div>
 <!-- ******************* Page Tabs ******************* -->
-<div class="container tab-container">
-  <div class="row">
-    <div class="col-xs-12 main-content schedule-content">
-      <ul class="tabs">
-        <li class="four borders">
-          <h3><a href="#tab1" id="first-tab" class="tab-title schedule-tab">Details</a></h3></li>
-        <li class="four borders">
-          <h3><a href="#tab2" id="second-tab" class="tab-title schedule-tab">Pricing</a></h3></li>
-        <li class="four borders">
-          <h3><a href="#tab3" id="third-tab" class="tab-title schedule-tab">Gallery</a></h3></li>
-        <li class="four borders">
-          <h3><a href="#tab4" id="fourth-tab" class="tab-title schedule-tab">Lineup</a></h3></li>
-      </ul>
+<div id="details"></div>
+<div class="container-fluid">
+  <div class="row content-container"
+    <div class="col-sm-12">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks five" onclick="openCity(event, 'Details')"  id="defaultOpen"><h3>Details</h3></a>
+        <a href="javascript:void(0)" class="tablinks five" onclick="openCity(event, 'Pricing')"><h3>Pricing</h3></a>
+        <a href="javascript:void(0)" class="tablinks five" onclick="openCity(event, 'Calendar')"><h3>Calendar</h3></a>
+        <a href="javascript:void(0)" class="tablinks five" onclick="openCity(event, 'Lineup')"><h3>Lineup</h3></a>
+        <a href="javascript:void(0)" class="tablinks five" onclick="openCity(event, 'faq')"><h3>faq</h3></a>
+      </div>
 
-      <div id="tab1" class="tabcontent events">
-        <div class="event">
-          <h3 class="headline-title schedule">FAQs</h3>
-          <h4 class="description">Can I bring my dog to the park?</h4>
-          <p>We love dogs at the park! We require all dogs to remain on a leash at all times for everyones safety.</p>
-
-          <h4 class="description">Can I bring my own alcohol to the park?</h4>
-          <p>No. Falconwood park has a fully stocked bar with drinks available for purchase.  Coolers are allowed in the outside campground however no alchol is allowed past the gate.</p>
+      <div id="Details" class="tabcontent container">
+        <div class="row p-t-10 p-b-10">
+          <div class="col-sm-12">
+            <h2 class="yellow text-center admiration-font">Details</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
       </div>
 
-      <div id="tab2" class="tabcontent events">
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
-        </div>
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
-        </div>
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
-        </div>
-
-        <p><i>Schedule and times subject to change.</i></p>
-      </div>
-
-      <div id="tab3" class="tabcontent events">
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
-        </div>
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
-        </div>
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
-        </div>
-        <div class="event">
-          <h4 class="description">detail description</h4>
-          <h3 class="headline-title schedule">Event Title</h3>
+      <div id="Pricing" class="tabcontent container">
+        <div class="row p-t-10 p-b-10">
+          <div class="col-sm-12">
+            <h2 class="yellow text-center admiration-font">Pricing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
       </div>
 
-      <div id="tab4" class="tabcontent events">
-        <div class="event">
-          <h4 class="description">Thursday 9pm</h4>
-          <h3 class="headline-title schedule">Kris Lager Band</h3>
+      <div id="Calendar" class="tabcontent container">
+        <div class="row p-t-10 p-b-10">
+          <div class="col-sm-12">
+            <h2 class="yellow text-center admiration-font">Calendar</h2>
+          </div>
         </div>
-        <div class="event">
-          <h4 class="description">Thursday 10pm</h4>
-          <h3 class="headline-title schedule">The Yawpers</h3>
+      </div>
+
+      <div id="Lineup" class="tabcontent container">
+        <div class="row p-t-10 p-b-10">
+          <div class="col-sm-12 col-md-6">
+            <%= image_tag "hullabaloo.jpg", class:"half-col-img" %>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h1 class="admiration-font yellow text-center">Hullabaloo</h1>
+            <h4 class="text-center p-t-5">August 3, 2017 - August 6, 2017</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <a href="www.google.com" class="btn btn-secondary action-button" role="button">Purchase Tickets</a>
+          </div>
         </div>
-        <div class="event">
-          <h4 class="description">Friday 7pm</h4>
-          <h3 class="headline-title schedule">Spoonfed Tribe</h3>
+        <hr>
+        <div class="row p-t-10 p-b-10">
+          <div class="col-sm-12 col-md-6">
+            <%= image_tag "nappy-roots-poster.jpg", class:"half-col-img" %>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h1 class="admiration-font yellow text-center">Awesome Concert</h1>
+            <h4 class="text-center p-t-5">August 3, 2017 - August 6, 2017</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <a href="www.google.com" class="btn btn-secondary action-button" role="button">Purchase Tickets</a>
+          </div>
         </div>
-        <div class="event">
-          <h4 class="description">Friday 9pm</h4>
-          <h3 class="headline-title schedule">Zoso</h3>
+      </div>
+
+      <div id="faq" class="tabcontent container">
+        <div class="row p-t-10 p-b-10">
+          <div class="col-sm-12">
+            <h2 class="yellow text-center admiration-font">faq</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- ******************* Page Tabs ******************* -->
+<div id="contact"></div>
