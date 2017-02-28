@@ -1,294 +1,6 @@
 @import "variables";
 
 // *************** RESPONSIVE 5 COLUMN LAYOUT *******************
-  // @mixin easeOut {
-  //   transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
-  // }
-
-  // @mixin break {
-  //   @media screen and (max-width: 760px) {
-  //     @content;
-  //   }
-  // }
-
-  // * {
-  //   box-sizing: border-box;
-  // }
-
-  // //strip sizes
-  // .strips {
-  //   min-height: 100vh;
-  //   text-align: center;
-  //   overflow: hidden;
-  //   color: white;
-    
-  //   &__strip {
-  //     will-change: width, left, z-index, height;
-  //     position: absolute;
-  //     width: 20%;
-  //     min-height: 100vh;
-  //     overflow: hidden;
-  //     cursor: pointer;
-  //     @include easeOut;
-      
-  //     &:nth-child(1) {
-  //       left: 0;
-  //     }
-      
-  //     &:nth-child(2) {
-  //       left: 20vw;
-  //     }
-      
-  //     &:nth-child(3) {
-  //       left: 40vw;
-  //     }
-      
-  //     &:nth-child(4) {
-  //       left: 60vw;
-  //     }
-      
-  //     &:nth-child(5) {
-  //       left: 80vw;
-  //     }
-
-  //     //photos change for media queries
-  //     &:nth-child(1) {
-  //       .strip__content {
-  //         background-image: url("mobile_wedding.jpg");
-  //         background-repeat: no-repeat;
-  //       }
-  //     }
-
-  //     &:nth-child(2) {
-  //       .strip__content {
-  //         background-image: url("mobile_music.jpg");
-  //         background-repeat: no-repeat;
-  //       }
-  //     }
-      
-  //     &:nth-child(3) {
-  //       .strip__content {
-  //         background-image: url("mobile_drivein.jpg");
-  //         background-repeat: no-repeat;
-  //       }
-  //     }
-      
-  //     &:nth-child(4) {
-  //       .strip__content {
-  //         background-image: url("mobile_camp.jpg");
-  //         background-repeat: no-repeat;
-  //       }
-  //     }
-      
-  //     &:nth-child(5) {
-  //       .strip__content {
-  //         background-image: url("mobile_private_2.jpg");
-  //         background-repeat: no-repeat;
-  //       }
-  //     }
-
-      
-  //     @include break {
-  //       min-height: 20vh;
-  //       &:nth-child(1) {
-  //         top: 0;
-  //         left: 0;
-  //         width: 100%;
-  //       }
-
-  //       &:nth-child(2) {
-  //         top: 20vh;
-  //         left: 0;
-  //         width: 100%;
-  //       }
-
-  //       &:nth-child(3) {
-  //         top: 40vh;
-  //         left: 0;
-  //         width: 100%;
-  //       }
-
-  //       &:nth-child(4) {
-  //         top: 60vh;
-  //         left: 0;
-  //         width: 100%;
-  //       }
-
-  //       &:nth-child(5) {
-  //         top: 80vh;
-  //         left: 0;
-  //         width: 100%;
-  //       }
-  //     }
-  //   }
-    
-  //   .strip__content {
-  //     animation-duration: 1s;
-  //     animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  //     animation-fill-mode: both;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     text-decoration: none;
-  //     // color: white;
-
-  //     // hides the detail text of the column
-  //     .strip__inner-text {
-  //       // will-change: transform, opacity;
-  //       position: absolute;
-  //       z-index: 5;
-  //       top: 50%;
-  //       left: 50%;
-  //       width: 70%;
-  //       transform: translate(-50%,-50%) scale(0.70);
-  //       opacity: 0;
-  //       // color: white;
-  //       @include easeOut;
-  //     }
-
-  //     &:hover {
-  //       //makes line shading grow on hover
-  //       &:before {
-  //         transform: skew(-30deg) scale(3) translate(0, 0);
-  //         opacity: 0.7;
-  //       }
-
-  //       //displays detail text of the column on hover
-  //       .strip__inner-text {
-  //         opacity: 1;
-  //       }
-
-  //       //hides the strip title on hover
-  //       .strip__title {
-  //         opacity: 0;
-  //       }
-
-  //       .title_background {
-  //         opacity: 0;
-  //       }
-  //     }
-
-  //     //shows line shading on static
-  //     &:before {
-  //       content: "";
-  //       position: absolute;
-  //       z-index: 1;
-  //       top: 0;
-  //       left: 0;
-  //       width: 100%;
-  //       height: 100%;
-  //       background: $black; /* For browsers that do not support gradients */
-  //       opacity: 0.10;
-  //       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+24,000000+50,000000+80,ffffff+100&0+0,0.2+14,0.5+46,0.5+54,0.25+80,0+100 */
-  //       // background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(106,106,106,0.2) 14%, rgba(0,0,0,0.29) 24%, rgba(0,0,0,0.5) 46%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 54%, rgba(0,0,0,0.25) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  //       // background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(106,106,106,0.2) 14%,rgba(0,0,0,0.29) 24%,rgba(0,0,0,0.5) 46%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 54%,rgba(0,0,0,0.25) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  //       // background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(106,106,106,0.2) 14%,rgba(0,0,0,0.29) 24%,rgba(0,0,0,0.5) 46%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 54%,rgba(0,0,0,0.25) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  //       // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */// opacity: 0.10;
-  //       transform-origin: center center;
-  //       transform: skew(-30deg) scaleY(1) translate(0, 0);
-  //       @include easeOut;
-  //     }
-  //   }
-
-  //   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+50,ffffff+100&0+0,0.6+51,0+100 */
-
-
-  //   .strip__title {
-  //     font-size: 2em;
-  //     color: white;
-  //     // z-index: 200;
-  //     // position: relative;
-  //   }
-  // }
-
-  // .index-container {
-  //   overflow: hidden;
-  // }
-
-  // // .fa-angle-right {
-  // //   color: white;
-  // // }
-
-  // // .fa-arrow-circle-right {
-  // //   color: $blue;
-  // // }
-
-  // @media screen and (min-width: 600px) {
-  //   .strips {
-  //     &__strip {
-  //     //changes photos to desktop versions
-  //       &:nth-child(1) {
-  //         .strip__content {
-  //           background-image: url("column_wedding_1200.jpg");
-  //           background-position: center;
-  //           background-repeat: no-repeat;
-  //         }
-  //       }
-
-  //       &:nth-child(2) {
-  //         .strip__content {
-  //           background-image: url("column_music_1200.jpg");
-  //           background-position: center;
-  //           background-repeat: no-repeat;
-  //         }
-  //       }
-        
-  //       &:nth-child(3) {
-  //         .strip__content {
-  //           background-image: url("column_drivein_1200.jpg");
-  //           background-position: center;
-  //           background-repeat: no-repeat;
-  //         }
-  //       }
-        
-  //       &:nth-child(4) {
-  //         .strip__content {
-  //           background-image: url("column_camp_repositioned_1.jpg");
-  //           background-position: right;
-  //           background-repeat: no-repeat;
-  //         }
-  //       }
-        
-  //       &:nth-child(5) {
-  //         .strip__content {
-  //           background-image: url("column_private_1200_2.jpg");
-  //           background-position: center;
-  //           background-repeat: no-repeat;
-  //         }
-  //       }
-  //     }
-  //     .strip__content {
-  //       .strip__inner-text {
-  //         transform: translate(-50%,-50%) scale(0.85);
-  //         background-position: center;
-  //         background-repeat: no-repeat;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @media screen and (min-width: 992px) {
-  //   //increases size of non-hover title
-  //   .strips {
-  //     .strip__title {
-  //       font-size: 2em;
-  //     }
-  //   }
-  // }
-// *************** RESPONSIVE 5 COLUMN LAYOUT *******************
-
-// *************** DEMO 5 COLUMN LAYOUT *******************
-  $color1: #244F75;
-  $color2: #60BFBF;
-  $color3: #8C4B7E;
-  $color4: #F8BB44;
-  $color5: #F24B4B;
-
   @mixin easeOut {
     transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -303,6 +15,7 @@
     box-sizing: border-box;
   }
 
+  //strip sizes
   .strips {
     min-height: 100vh;
     text-align: center;
@@ -312,7 +25,7 @@
     &__strip {
       will-change: width, left, z-index, height;
       position: absolute;
-      width: 20%;
+      width: 20.5%;
       min-height: 100vh;
       overflow: hidden;
       cursor: pointer;
@@ -337,51 +50,43 @@
       &:nth-child(5) {
         left: 80vw;
       }
-      
+
+      //photos change for media queries
       &:nth-child(1) {
         .strip__content {
-          background: $color1;
-          transform: translate3d(-100%, 0, 0);
-          animation-name: strip1;
-          animation-delay: 0.1s;
+          background-image: url("mobile_wedding.jpg");
+          background-repeat: no-repeat;
         }
       }
-      
+
       &:nth-child(2) {
         .strip__content {
-          background: $color2;
-          transform: translate3d(0, 100%, 0);
-          animation-name: strip2;
-          animation-delay: 0.2s;
+          background-image: url("mobile_music.jpg");
+          background-repeat: no-repeat;
         }
       }
       
       &:nth-child(3) {
         .strip__content {
-          background: $color3;
-          transform: translate3d(0, -100%, 0);
-          animation-name: strip3;
-          animation-delay: 0.3s;
+          background-image: url("mobile_drivein.jpg");
+          background-repeat: no-repeat;
         }
       }
       
       &:nth-child(4) {
         .strip__content {
-          background: $color4;
-          transform: translate3d(0, 100%, 0);
-          animation-name: strip4;
-          animation-delay: 0.4s;
+          background-image: url("mobile_camp.jpg");
+          background-repeat: no-repeat;
         }
       }
       
       &:nth-child(5) {
         .strip__content {
-          background: $color5;
-          transform: translate3d(100%, 0, 0);
-          animation-name: strip5;
-          animation-delay: 0.5s;
+          background-image: url("mobile_private_2.jpg");
+          background-repeat: no-repeat;
         }
       }
+
       
       @include break {
         min-height: 20vh;
@@ -430,14 +135,45 @@
       width: 100%;
       height: 100%;
       text-decoration: none;
+      // color: white;
+
+      // hides the detail text of the column
+      .strip__inner-text {
+        // will-change: transform, opacity;
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        transform: translate(-50%,-50%) scale(0.70);
+        opacity: 0;
+        // color: white;
+        @include easeOut;
+      }
 
       &:hover {
+        //makes line shading grow on hover
         &:before {
           transform: skew(-30deg) scale(3) translate(0, 0);
-          opacity: 0.1;
+          opacity: 0.7;
+        }
+
+        //displays detail text of the column on hover
+        .strip__inner-text {
+          opacity: 1;
+        }
+
+        //hides the strip title on hover
+        .strip__title {
+          opacity: 0;
+        }
+
+        .title_background {
+          opacity: 0;
         }
       }
 
+      //shows line shading on static
       &:before {
         content: "";
         position: absolute;
@@ -446,162 +182,426 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: white;
-        opacity: 0.05;
+        background: $black; /* For browsers that do not support gradients */
+        opacity: 0.10;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+24,000000+50,000000+80,ffffff+100&0+0,0.2+14,0.5+46,0.5+54,0.25+80,0+100 */
+        // background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(106,106,106,0.2) 14%, rgba(0,0,0,0.29) 24%, rgba(0,0,0,0.5) 46%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 54%, rgba(0,0,0,0.25) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        // background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(106,106,106,0.2) 14%,rgba(0,0,0,0.29) 24%,rgba(0,0,0,0.5) 46%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 54%,rgba(0,0,0,0.25) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        // background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(106,106,106,0.2) 14%,rgba(0,0,0,0.29) 24%,rgba(0,0,0,0.5) 46%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 54%,rgba(0,0,0,0.25) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */// opacity: 0.10;
         transform-origin: center center;
         transform: skew(-30deg) scaleY(1) translate(0, 0);
         @include easeOut;
       }
     }
-    
-    .strip__inner-text {
-      will-change: transform, opacity;
-      position: absolute;
-      z-index: 5;
-      top: 50%;
-      left: 50%;
-      width: 70%;
-      transform: translate(-50%,-50%) scale(0.5);
-      opacity: 0;
-      @include easeOut;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+50,ffffff+100&0+0,0.6+51,0+100 */
+
+
+    .strip__title {
+      font-size: 2em;
+      color: white;
+      // z-index: 200;
+      // position: relative;
     }
-    
-    &__strip--expanded {
-      width: 100%;
-      top: 0 !important;
-      left: 0 !important;
-      z-index: 3;
-      cursor: default;
-      
-      @include break {
-        min-height: 100vh;
-      }
-      
-      .strip__content {
-        &:hover {
-          &:before {
-            transform: skew(-30deg) scale(1) translate(0, 0);
-            opacity: 0.05;
+  }
+
+  .index-container {
+    overflow: hidden;
+  }
+
+  // .fa-angle-right {
+  //   color: white;
+  // }
+
+  // .fa-arrow-circle-right {
+  //   color: $blue;
+  // }
+
+  @media screen and (min-width: 600px) {
+    .strips {
+      &__strip {
+      //changes photos to desktop versions
+        &:nth-child(1) {
+          .strip__content {
+            background-image: url("column_wedding_1200.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &:nth-child(2) {
+          .strip__content {
+            background-image: url("column_music_1200.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+        
+        &:nth-child(3) {
+          .strip__content {
+            background-image: url("column_drivein_1200.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+        
+        &:nth-child(4) {
+          .strip__content {
+            background-image: url("column_camp_repositioned_1.jpg");
+            background-position: right;
+            background-repeat: no-repeat;
+          }
+        }
+        
+        &:nth-child(5) {
+          .strip__content {
+            background-image: url("column_private_1200_2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
           }
         }
       }
-      
+      .strip__content {
+        .strip__inner-text {
+          transform: translate(-50%,-50%) scale(0.85);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    //increases size of non-hover title
+    .strips {
       .strip__title {
-        opacity: 0;
+        font-size: 2em;
       }
+    }
+  }
+// *************** RESPONSIVE 5 COLUMN LAYOUT *******************
+
+// *************** DEMO 5 COLUMN LAYOUT *******************
+  // $color1: #244F75;
+  // $color2: #60BFBF;
+  // $color3: #8C4B7E;
+  // $color4: #F8BB44;
+  // $color5: #F24B4B;
+
+  // @mixin easeOut {
+  //   transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
+  // }
+
+  // @mixin break {
+  //   @media screen and (max-width: 760px) {
+  //     @content;
+  //   }
+  // }
+
+  // * {
+  //   box-sizing: border-box;
+  // }
+
+  // .strips {
+  //   min-height: 100vh;
+  //   text-align: center;
+  //   overflow: hidden;
+  //   color: white;
+    
+  //   &__strip {
+  //     will-change: width, left, z-index, height;
+  //     position: absolute;
+  //     width: 20.5%;
+  //     min-height: 100vh;
+  //     overflow: hidden;
+  //     cursor: pointer;
+  //     @include easeOut;
       
-      .strip__inner-text {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-      }
-    }
-  }
+  //     &:nth-child(1) {
+  //       left: 0;
+  //     }
+      
+  //     &:nth-child(2) {
+  //       left: 20vw;
+  //     }
+      
+  //     &:nth-child(3) {
+  //       left: 40vw;
+  //     }
+      
+  //     &:nth-child(4) {
+  //       left: 60vw;
+  //     }
+      
+  //     &:nth-child(5) {
+  //       left: 80vw;
+  //     }
+      
+  //     &:nth-child(1) {
+  //       .strip__content {
+  //         background: $color1;
+  //         transform: translate3d(-100%, 0, 0);
+  //         animation-name: strip1;
+  //         animation-delay: 0.1s;
+  //       }
+  //     }
+      
+  //     &:nth-child(2) {
+  //       .strip__content {
+  //         background: $color2;
+  //         transform: translate3d(0, 100%, 0);
+  //         animation-name: strip2;
+  //         animation-delay: 0.2s;
+  //       }
+  //     }
+      
+  //     &:nth-child(3) {
+  //       .strip__content {
+  //         background: $color3;
+  //         transform: translate3d(0, -100%, 0);
+  //         animation-name: strip3;
+  //         animation-delay: 0.3s;
+  //       }
+  //     }
+      
+  //     &:nth-child(4) {
+  //       .strip__content {
+  //         background: $color4;
+  //         transform: translate3d(0, 100%, 0);
+  //         animation-name: strip4;
+  //         animation-delay: 0.4s;
+  //       }
+  //     }
+      
+  //     &:nth-child(5) {
+  //       .strip__content {
+  //         background: $color5;
+  //         transform: translate3d(100%, 0, 0);
+  //         animation-name: strip5;
+  //         animation-delay: 0.5s;
+  //       }
+  //     }
+      
+  //     @include break {
+  //       min-height: 20vh;
+  //       &:nth-child(1) {
+  //         top: 0;
+  //         left: 0;
+  //         width: 100%;
+  //       }
 
-  .strip__title {
-    display: block;
-    margin: 0;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    font-size: 3.5vw;
-    color: white;
-    @include easeOut;
+  //       &:nth-child(2) {
+  //         top: 20vh;
+  //         left: 0;
+  //         width: 100%;
+  //       }
+
+  //       &:nth-child(3) {
+  //         top: 40vh;
+  //         left: 0;
+  //         width: 100%;
+  //       }
+
+  //       &:nth-child(4) {
+  //         top: 60vh;
+  //         left: 0;
+  //         width: 100%;
+  //       }
+
+  //       &:nth-child(5) {
+  //         top: 80vh;
+  //         left: 0;
+  //         width: 100%;
+  //       }
+  //     }
+  //   }
     
-    @include break {
-      font-size: 28px;
-    }
-  }
+  //   .strip__content {
+  //     animation-duration: 1s;
+  //     animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  //     animation-fill-mode: both;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     text-decoration: none;
 
-  .strip__close {
-    position: absolute;
-    right: 3vw;
-    top: 3vw;
-    opacity: 0;
-    z-index: 10;
-    @include easeOut;
-    cursor: pointer;
-    transition-delay: 0.5s;
+  //     &:hover {
+  //       &:before {
+  //         transform: skew(-30deg) scale(3) translate(0, 0);
+  //         opacity: 0.1;
+  //       }
+  //     }
+
+  //     &:before {
+  //       content: "";
+  //       position: absolute;
+  //       z-index: 1;
+  //       top: 0;
+  //       left: 0;
+  //       width: 100%;
+  //       height: 100%;
+  //       background: white;
+  //       opacity: 0.05;
+  //       transform-origin: center center;
+  //       transform: skew(-30deg) scaleY(1) translate(0, 0);
+  //       @include easeOut;
+  //     }
+  //   }
     
-    &--show {
-      opacity: 1;
-    }
-  }
-
-  @keyframes strip1 {
-    0% {
-      transform: translate3d(-100%, 0, 0);
-    }
+  //   .strip__inner-text {
+  //     will-change: transform, opacity;
+  //     position: absolute;
+  //     z-index: 5;
+  //     top: 50%;
+  //     left: 50%;
+  //     width: 70%;
+  //     transform: translate(-50%,-50%) scale(0.5);
+  //     opacity: 0;
+  //     @include easeOut;
+  //   }
     
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+  //   &__strip--expanded {
+  //     width: 100%;
+  //     top: 0 !important;
+  //     left: 0 !important;
+  //     z-index: 3;
+  //     cursor: default;
+      
+  //     @include break {
+  //       min-height: 100vh;
+  //     }
+      
+  //     .strip__content {
+  //       &:hover {
+  //         &:before {
+  //           transform: skew(-30deg) scale(1) translate(0, 0);
+  //           opacity: 0.05;
+  //         }
+  //       }
+  //     }
+      
+  //     .strip__title {
+  //       opacity: 0;
+  //     }
+      
+  //     .strip__inner-text {
+  //       opacity: 1;
+  //       transform: translate(-50%, -50%) scale(1);
+  //     }
+  //   }
+  // }
 
-  @keyframes strip2 {
-    0% {
-      transform: translate3d(0, 100%, 0);
-    }
+  // .strip__title {
+  //   display: block;
+  //   margin: 0;
+  //   position: relative;
+  //   z-index: 2;
+  //   width: 100%;
+  //   font-size: 3.5vw;
+  //   color: white;
+  //   @include easeOut;
     
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+  //   @include break {
+  //     font-size: 28px;
+  //   }
+  // }
 
-  @keyframes strip3 {
-    0% {
-      transform: translate3d(0, -100%, 0);
-    }
+  // .strip__close {
+  //   position: absolute;
+  //   right: 3vw;
+  //   top: 3vw;
+  //   opacity: 0;
+  //   z-index: 10;
+  //   @include easeOut;
+  //   cursor: pointer;
+  //   transition-delay: 0.5s;
     
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+  //   &--show {
+  //     opacity: 1;
+  //   }
+  // }
 
-  @keyframes strip4 {
-    0% {
-      transform: translate3d(0, 100%, 0);
-    }
+  // @keyframes strip1 {
+  //   0% {
+  //     transform: translate3d(-100%, 0, 0);
+  //   }
     
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+  //   100% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
 
-  @keyframes strip5 {
-    0% {
-      transform: translate3d(100%, 0, 0);
-    }
+  // @keyframes strip2 {
+  //   0% {
+  //     transform: translate3d(0, 100%, 0);
+  //   }
     
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+  //   100% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
 
-  /* Demo purposes */
+  // @keyframes strip3 {
+  //   0% {
+  //     transform: translate3d(0, -100%, 0);
+  //   }
+    
+  //   100% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
 
-  body {
-    font-family: 'Lato';
-    -webkit-font-smoothing: antialiased;
-    text-rendering: geometricPrecision;
-    line-height: 1.5;
-  }
+  // @keyframes strip4 {
+  //   0% {
+  //     transform: translate3d(0, 100%, 0);
+  //   }
+    
+  //   100% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
 
-  h1, h2 {
-    font-weight: 300;
-  }
+  // @keyframes strip5 {
+  //   0% {
+  //     transform: translate3d(100%, 0, 0);
+  //   }
+    
+  //   100% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
 
-  .fa {
-    font-size: 30px;
-    color: white;
-  }
+  // /* Demo purposes */
 
-  h2 {
-    font-size: 36px;
-    margin: 0 0 16px;
-  }
+  // body {
+  //   font-family: 'Lato';
+  //   -webkit-font-smoothing: antialiased;
+  //   text-rendering: geometricPrecision;
+  //   line-height: 1.5;
+  // }
 
-  p {
-    margin: 0 0 16px;
-  }
+  // h1, h2 {
+  //   font-weight: 300;
+  // }
+
+  // .fa {
+  //   font-size: 30px;
+  //   color: white;
+  // }
+
+  // h2 {
+  //   font-size: 36px;
+  //   margin: 0 0 16px;
+  // }
+
+  // p {
+  //   margin: 0 0 16px;
+  // }
 // *************** DEMO 5 COLUMN LAYOUT *******************
 
