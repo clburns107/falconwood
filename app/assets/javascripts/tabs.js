@@ -19,6 +19,6 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  document.getElementById("defaultOpen").click();
+$(document).ready(function() {
+  $('#defaultOpen').trigger('click');
 });

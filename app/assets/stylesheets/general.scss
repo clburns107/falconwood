@@ -1,11 +1,20 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+@font-face {
+	font-family: 'miama';
+  	src: url("miama.otf");
+}
+
 body {
 	background-color: white;
 	color: $drk-grey;
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-size: 22px;
+}
+
+.special-font {
+	font-family: 'miama';
 }
 
 .m-0 {
