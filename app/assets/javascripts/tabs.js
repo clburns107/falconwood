@@ -19,6 +19,6 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-$(document).ready(function() {
-  $('#defaultOpen').trigger('click');
-});
+window.onload = function() {
+  document.getElementById("defaultOpen").click();
+};
