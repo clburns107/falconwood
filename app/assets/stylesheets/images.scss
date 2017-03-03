@@ -9,49 +9,46 @@
 // ********************************* Image Gallery Modal ******************************* //
 
 
-// .gallery {
-//   width: 640px;
-//   margin: 0 auto;
-//   padding: 5px;
-//   background: #fff;
-//   box-shadow: 0 1px 2px rgba(0,0,0,.3);
-// }
-
-// .gallery > div {
-//   position: relative;
-//   float: left;
-//   padding: 5px;
-// }
-
-.gallery > div > img {
-	// display: block;
-	width: 100%;
-	transition: .1s transform;
-	transform: translateZ(0); /* hack */
+img {
+    max-width: 100%;
+    display: block;
 }
 
-.gallery > div:hover {
-	z-index: 1;
-	top: 25%;
+.thumbnail {
 	position: absolute;
-	left: 35%;
+    top: 50%;
+    left: 50%;
+    
+    width: 320px;
+    height: 240px;
+    
+    -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+    -moz-transform: translate(-50%,-50%); /* Firefox */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
 }
 
-.gallery > div:hover > img {
-	transform: scale(1.8,1.8);
-	transition: .5s transform;
+.image {
+    width: 100%;
+    height: 100%;    
 }
 
-.cf:before, .cf:after {
-	display: table;
-	content: "";
-	line-height: 0;
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
 }
 
-.cf:after {
-	clear: both;
+.image:hover img {
+    -webkit-transform:scale(1.8); /* Safari and Chrome */
+    -moz-transform:scale(1.8); /* Firefox */
+    -ms-transform:scale(1.8); /* IE 9 */
+    -o-transform:scale(1.8); /* Opera */
+     transform:scale(1.8);
 }
-
 // ********************************* /Image Gallery Modal ******************************* //
 
 @media screen and (min-width: 768px) {
