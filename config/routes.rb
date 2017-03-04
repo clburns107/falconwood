@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "drive_in", to: "drive_in#index"
   get "weddings", to: "weddings#index"
   get "live_music", to: "live_music#index"
+  get "about", to: "homepage#about"
 end
