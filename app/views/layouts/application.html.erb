@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+   
+
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" %>
+
+    <!-- ******************* image gallery scripts ******************* -->
+    <script type='text/javascript' src='/assets/jquery-11.0.min.js'></script> 
+    <script type='text/javascript' src='/assets/unitegallery.min.js'></script>  
+
+    <link rel='stylesheet' href='/assets/unite-gallery.css' type='text/css' />
+  
+    <script type='text/javascript' src='/assets/ug-theme-tiles.js'></script>
+    <!-- ******************* /image gallery scripts ******************* -->
   </head>
 
   <body>
@@ -30,5 +41,14 @@
       end 
     %>
 
+    <script type="text/javascript">
+
+      jQuery(document).ready(function(){
+
+        jQuery("#gallery").unitegallery();
+
+      });
+      
+    </script>
   </body>
 </html>
