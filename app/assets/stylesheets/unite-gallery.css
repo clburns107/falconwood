@@ -284,7 +284,7 @@
 	position:absolute;
 	z-index:100;	
 	background-color:#000000;
-	background-image:url('../assets/loader-black1.gif');	
+	background-image:url('https://s3-us-west-2.amazonaws.com/falconwood/loader-black1.gif');	
 	background-repeat:no-repeat;
 	background-position:center center;
 	box-sizing:border-box;
@@ -295,7 +295,7 @@
 	width:100%;
 	height:100%;
 	background-color:#000000;
-	background-image:url('../assets/loader-black1.gif');	
+	background-image:url('https://s3-us-west-2.amazonaws.com/falconwood/loader-black1.gif');	
 	background-repeat:no-repeat;
 	background-position:center center;
 }
@@ -579,7 +579,7 @@ img.ug-sepia-effect{
 	background-color:#000000;
 	opacity: 0.3;
     filter: alpha(opacity=30);	
-	background-image:url('../assets/cover-grid.png');
+	background-image:url('https://s3-us-west-2.amazonaws.com/falconwood/cover-grid.png');
 }
 
 
