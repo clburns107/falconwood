@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require ug-theme-tiles.js
+//= require unitegallery.min.js
 //= require_tree .
 
