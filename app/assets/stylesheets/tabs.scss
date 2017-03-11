@@ -46,6 +46,10 @@ div.tab a {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
+#Gallery.tabcontent {
+    width: 100%;
+}
+
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
