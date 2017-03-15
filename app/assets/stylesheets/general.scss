@@ -2,30 +2,45 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 @font-face {
-	font-family: 'brushgyopersonaluse';
-  	src: url("brushgyopersonaluse.ttf");
+	font-family: 'Realist';
+  	src: url("Realist.otf");
+}
+
+@font-face {
+	font-family: 'Heartland Regular';
+  	src: url("Heartland Regular.otf");
 }
 
 body {
 	background-color: white;
 	color: $drk-grey;
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-family: 'Realist', sans-serif;
+	font-size: 22px;
 }
 
-.special-font {
-	font-family: 'brushgyopersonaluse';
+.accent-font-1 {
+	font-family: 'Heartland Regular';
+	font-size: 1.5em;
 }
 
-h1.special-font {
-font-size: 5em;
-word-spacing: -1.5rem;
+.accent-font-2 {
+	font-family: 'Realist';
+	// font-size: 1em;
 }
 
-h2.special-font {
-font-size: 4em;
-word-spacing: -1.5rem;
+.yellow.text-center.accent-font-1 {
+	font-size: 2.5em;
 }
+
+// h1.special-font {
+// font-size: 5em;
+// word-spacing: -1.5rem;
+// }
+
+// h2.special-font {
+// font-size: 4em;
+// word-spacing: -1.5rem;
+// }
 
 .m-0 {
 	margin: 0 0 0 0;
