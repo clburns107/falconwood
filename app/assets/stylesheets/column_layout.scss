@@ -53,35 +53,35 @@
       //photos change for media queries
       &:nth-child(1) {
         .strip__content {
-          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/mobile_wedding.jpg");
+          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Weddings/mobile_wedding.jpg");
           background-repeat: no-repeat;
         }
       }
 
       &:nth-child(2) {
         .strip__content {
-          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/mobile_music.jpg");
+          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Live+Music/mobile_music.jpg");
           background-repeat: no-repeat;
         }
       }
       
       &:nth-child(3) {
         .strip__content {
-          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/mobile_drivein.jpg");
+          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/mobile_drivein.jpg");
           background-repeat: no-repeat;
         }
       }
       
       &:nth-child(4) {
         .strip__content {
-          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/mobile_camp.jpg");
+          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Camping/mobile_camp.jpg");
           background-repeat: no-repeat;
         }
       }
       
       &:nth-child(5) {
         .strip__content {
-          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/mobile_private_2.jpg");
+          background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Private+Events/mobile_private_2.jpg");
           background-repeat: no-repeat;
         }
       }
@@ -216,7 +216,7 @@
       //changes photos to desktop versions
         &:nth-child(1) {
           .strip__content {
-            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/column_wedding_1200.jpg");
+            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Homepage/column_wedding_1200.jpg");
             background-position: center;
             background-repeat: no-repeat;
           }
@@ -224,7 +224,7 @@
 
         &:nth-child(2) {
           .strip__content {
-            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/column_music_1200.jpg");
+            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Homepage/column_music_1200.jpg");
             background-position: center;
             background-repeat: no-repeat;
           }
@@ -232,7 +232,7 @@
         
         &:nth-child(3) {
           .strip__content {
-            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/column_goonies_1200.jpg");
+            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Homepage/column_goonies_1200.jpg");
             background-position: center;
             background-repeat: no-repeat;
           }
@@ -240,7 +240,7 @@
         
         &:nth-child(4) {
           .strip__content {
-            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/column_camp_repositioned_1.jpg");
+            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Homepage/column_camp_repositioned_1.jpg");
             background-position: right;
             background-repeat: no-repeat;
           }
@@ -248,7 +248,7 @@
         
         &:nth-child(5) {
           .strip__content {
-            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/column_private_1200.jpg");
+            background-image: url("https://s3-us-west-2.amazonaws.com/falconwood/Homepage/column_private_1200.jpg");
             background-position: center;
             background-repeat: no-repeat;
           }
