@@ -14,7 +14,7 @@
 body {
 	background-color: white;
 	color: $drk-grey;
-	font-family: 'Realist', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 22px;
 }
 
@@ -30,6 +30,22 @@ body {
 
 .yellow.text-center.accent-font-1 {
 	font-size: 2.5em;
+}
+
+a.black-background-link{
+	color: $yellow;
+}
+
+a.black-background-link:hover {
+	color: $lt-grey;
+}
+
+a.white-background-link{
+	color: $blue;
+}
+
+a.white-background-link:hover {
+	color: $drk-grey;
 }
 
 // h1.special-font {
