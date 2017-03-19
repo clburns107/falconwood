@@ -15,12 +15,12 @@ body {
 	background-color: white;
 	color: $drk-grey;
 	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .accent-font-1 {
 	font-family: 'Heartland Rough';
-	font-size: 1.5em;
+	// font-size: 1.25em;
 }
 
 .accent-font-2 {
@@ -29,7 +29,7 @@ body {
 }
 
 .yellow.text-center.accent-font-1 {
-	font-size: 2.5em;
+	// font-size: 2.5em;
 }
 
 a.black-background-link{
@@ -117,6 +117,15 @@ iframe {
 	height: 600px; 
 }
 
+@media screen and (min-width: 992px) {
+	.accent-font-1 {
+		font-size: 1.25em;
+	}
+
+	.accent-font-2 {
+		font-size: 1em;
+	}
+}
 
 
 

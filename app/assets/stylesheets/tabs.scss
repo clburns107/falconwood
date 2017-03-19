@@ -87,10 +87,15 @@ div.tab a {
   .three {
     width: 33.3%;
   }
+}
 
-  .lineup-title {
-    font-family: 'Heartland Rough';
-    font-size: 1.5em;
-  }
+@media screen and (min-width: 992px) {
+    .lineup-title {
+        font-family: 'Heartland Rough';
+        font-size: 2em;
+    }
 
+    .yellow.text-center.accent-font-2 {
+        font-size: 1em
+    }
 }
