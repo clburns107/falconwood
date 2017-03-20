@@ -65,6 +65,10 @@ div.tab a {
     width: 100%;
 }
 
+.lineup-title {
+    font-family: 'Heartland Rough';
+}
+
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -91,11 +95,14 @@ div.tab a {
 
 @media screen and (min-width: 992px) {
     .lineup-title {
-        font-family: 'Heartland Rough';
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .yellow.text-center.accent-font-2 {
-        font-size: 1em
+        font-size: 2em
+    }
+
+    .yellow.text-center.accent-font-1 {
+        font-size: 3em
     }
 }

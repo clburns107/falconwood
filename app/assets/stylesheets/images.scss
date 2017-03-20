@@ -1,8 +1,6 @@
 .half-col-img {
-	// display: block;
-	// margin-left: auto;
-	// margin-right: auto;
 	width: 100%;
+	padding-bottom: 10%;
 }
 
 .staff-photo {
@@ -18,6 +16,10 @@
 	.half-col-img {
 		display: initial;
 		float: right;
+	}
+
+	.half-col-img {
+		padding-bottom: 0;
 	}
 }
 

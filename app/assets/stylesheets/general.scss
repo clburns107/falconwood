@@ -20,16 +20,10 @@ body {
 
 .accent-font-1 {
 	font-family: 'Heartland Rough';
-	// font-size: 1.25em;
 }
 
 .accent-font-2 {
 	font-family: 'Realist';
-	// font-size: 1em;
-}
-
-.yellow.text-center.accent-font-1 {
-	// font-size: 2.5em;
 }
 
 a.black-background-link{
@@ -47,16 +41,6 @@ a.white-background-link{
 a.white-background-link:hover {
 	color: $drk-grey;
 }
-
-// h1.special-font {
-// font-size: 5em;
-// word-spacing: -1.5rem;
-// }
-
-// h2.special-font {
-// font-size: 4em;
-// word-spacing: -1.5rem;
-// }
 
 .m-0 {
 	margin: 0 0 0 0;
@@ -119,7 +103,7 @@ iframe {
 
 @media screen and (min-width: 992px) {
 	.accent-font-1 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 
 	.accent-font-2 {
