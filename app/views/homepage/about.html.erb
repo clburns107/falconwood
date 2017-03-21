@@ -43,7 +43,7 @@
     <div class="row content-container background-black"
       <div class="col-sm-12">
         <div class="tab">
-          <a href="javascript:void(0)" class="tablinks three" onclick="openCity(event, 'Gallery')"><h3>Gallery</h3></a>
+          <a href="javascript:void(0)" class="tablinks three" onclick="openCity(event, 'Gallery')"><h3>Falconwood Faces</h3></a>
           <a href="javascript:void(0)" class="tablinks three" onclick="openCity(event, 'Lineup')" id="defaultOpen"><h3>Lineup</h3></a>
           <a href="javascript:void(0)" class="tablinks three" onclick="openCity(event, 'Calendar')"><h3>Calendar</h3></a>
         </div>
@@ -85,7 +85,12 @@
                   <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Zoso</span><br>The Ultimate Led Zeppelin Experience</h2>
                   <h4 class="text-center">April 15, 2017</h4>
                   <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/zoso-the-ultimate-led-zeppelin-experience-tickets-32840456690" class="btn btn-secondary action-button" target="_blank" role="button">Purchase Tickets</a>
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/zoso-the-ultimate-led-zeppelin-experience-tickets-32840456690", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+                  <div class="button-container">
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/facebook.png", :class => "tab-social-media-icon"), "https://www.facebook.com/events/433971580283574/", :target => "_blank" %>
+
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/website-link-yellow.png", :class => "tab-social-media-icon"), "https://www.zosoontour.com", :target => "_blank" %>
                   </div>
                 </div>
               </div>
@@ -104,7 +109,7 @@
                   <h2 class="yellow text-center accent-font-2"><span class="lineup-title">FishFest</span></h2>
                   <h4 class="text-center">July 28, 2017 - July 30, 2017</h4>
                   <div class="button-container">
-                    <a href="http://www.fishfestomaha.com" class="btn btn-secondary action-button" target="_blank" role="button">Purchase Tickets</a>
+                    <%= link_to "Purchase Tickets", "http://www.fishfestomaha.com/", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
                   </div>
                 </div>
               </div>
@@ -123,7 +128,12 @@
                   <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Hullabaloo</span><br>Music &amp; Camping Festival</h2>
                   <h4 class="text-center ">August 3, 2017 - August 5, 2017</h4>
                   <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/hullabaloo-2017-tickets-32895449174" class="btn btn-secondary action-button" target="_blank" role="button">Purchase Tickets</a>
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/hullabaloo-2017-tickets-32895449174", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+                  <div class="button-container">
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/facebook.png", :class => "tab-social-media-icon"), "https://www.facebook.com/events/1879134145704315/", :target => "_blank" %>
+
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/website-link-yellow.png", :class => "tab-social-media-icon"), "http://www.hullabaloomusicfestival.com/", :target => "_blank" %>
                   </div>
                 </div>
               </div>

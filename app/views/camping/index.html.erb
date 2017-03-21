@@ -75,15 +75,15 @@
           <div class="container-fluid p-0">
             <div id="gallery" style="display:none;">
               <a href="#">
-              <img alt="Campers sitting around a campfire at Falconwood Park”
+                <img alt=""
                    src="https://s3-us-west-2.amazonaws.com/falconwood/Camping/thumbs/campfire-thumb.jpg"
                    data-image="https://s3-us-west-2.amazonaws.com/falconwood/Camping/campfire.JPG"
-                   data-description=“Campers sitting around a campfire at Falconwood Park”
+                   data-description="Campers sitting around a campfire at Falconwood Park"
                    style="display:none">
               </a>
 
               <a href="#">
-              <img alt="Outside of Glamp tent at Falconwood Park”
+                <img alt=""
                    src="https://s3-us-west-2.amazonaws.com/falconwood/Camping/thumbs/glamp-tent-thumb.jpg"
                    data-image="https://s3-us-west-2.amazonaws.com/falconwood/Camping/glamp-tent.jpg"
                    data-description="Outside of Glamp tent at Falconwood Park"
@@ -91,7 +91,7 @@
               </a>
 
               <a href="#">
-              <img alt="Falconwood Park campers and glamp sites illuminated at night”
+                <img alt=""
                    src="https://s3-us-west-2.amazonaws.com/falconwood/Camping/thumbs/glamps-and-campers-at-night-thumb.jpg"
                    data-image="https://s3-us-west-2.amazonaws.com/falconwood/Camping/glamps-and-campers-at-night.JPG"
                    data-description="Falconwood Park campers and glamp sites illuminated at night"
@@ -99,7 +99,7 @@
               </a>
 
               <a href="#">
-              <img alt="Falconwood Park campers and glamp sites”
+                <img alt=""
                    src="https://s3-us-west-2.amazonaws.com/falconwood/Camping/thumbs/glamps-and-campers-thumb.jpg"
                    data-image="https://s3-us-west-2.amazonaws.com/falconwood/Camping/glamps-and-campers.JPG"
                    data-description="Falconwood Park campers and glamp sites"
@@ -107,7 +107,7 @@
               </a>
 
               <a href="#">
-              <img alt=“Interior of glamp site“
+                <img alt=""
                    src="https://s3-us-west-2.amazonaws.com/falconwood/Camping/thumbs/inside-glamp-tent-thumb.jpg"
                    data-image="https://s3-us-west-2.amazonaws.com/falconwood/Camping/inside-glamp-tent.jpg"
                    data-description="Interior of glamp site"
@@ -134,7 +134,12 @@
                   <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Zoso</span><br>The Ultimate Led Zeppelin Experience</h2>
                   <h4 class="text-center">April 15, 2017</h4>
                   <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/zoso-the-ultimate-led-zeppelin-experience-tickets-32840456690" target="_blank" class="btn btn-secondary action-button" role="button">Purchase Tickets</a>
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/zoso-the-ultimate-led-zeppelin-experience-tickets-32840456690", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+                  <div class="button-container">
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/facebook.png", :class => "tab-social-media-icon"), "https://www.facebook.com/events/433971580283574/", :target => "_blank" %>
+
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/website-link-yellow.png", :class => "tab-social-media-icon"), "https://www.zosoontour.com", :target => "_blank" %>
                   </div>
                 </div>
               </div>
@@ -153,7 +158,7 @@
                   <h2 class="yellow text-center accent-font-2"><span class="lineup-title">FishFest</span></h2>
                   <h4 class="text-center">July 28, 2017 - July 30, 2017</h4>
                   <div class="button-container">
-                    <a href="http://www.fishfestomaha.com" target="_blank" class="btn btn-secondary action-button" role="button">Purchase Tickets</a>
+                    <%= link_to "Purchase Tickets", "http://www.fishfestomaha.com/", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
                   </div>
                 </div>
               </div>
@@ -172,7 +177,12 @@
                   <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Hullabaloo</span><br>Music &amp; Camping Festival</h2>
                   <h4 class="text-center ">August 3, 2017 - August 5, 2017</h4>
                   <div class="button-container">
-                    <a href="https://www.eventbrite.com/e/hullabaloo-2017-tickets-32895449174"  target="_blank" class="btn btn-secondary action-button" role="button">Purchase Tickets</a>
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/hullabaloo-2017-tickets-32895449174", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+                  <div class="button-container">
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/facebook.png", :class => "tab-social-media-icon"), "https://www.facebook.com/events/1879134145704315/", :target => "_blank" %>
+
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/website-link-yellow.png", :class => "tab-social-media-icon"), "http://www.hullabaloomusicfestival.com/", :target => "_blank" %>
                   </div>
                 </div>
               </div>
