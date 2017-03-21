@@ -264,11 +264,17 @@
     }
   }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1400px) {
     //increases size of non-hover title
     .strips {
       .strip__title {
-        // font-size: 5em;
+        font-size: 2.5em;
+      }
+
+      .strip__content {
+        .strip__inner-text {
+          font-size: 1.5em;
+        }
       }
     }
   }
