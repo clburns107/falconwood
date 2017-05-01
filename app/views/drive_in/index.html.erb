@@ -45,13 +45,14 @@
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
 
-              <ul class="yellow text-center accent-font-2">
+              <h1 class="yellow text-center p-t-5 accent-font-1">Ticket Info</h1>
+
+              <ul class="yellow text-center accent-font-2 p-t-5 m-b-5">
                 <li>Single Passenger - $7 per vehicle</li>
                 <li>Two Passengers - $14 per vehicle</li>
                 <li>Three or More Passengers - $20 per vehicle</li>
               </ul>
 
-              <h1 class="yellow text-center p-t-5 accent-font-1">Ticket Info</h1>
               <p>Falconwood Park does sell drive-in tickets at the gate, however, we <em>strongly</em> recommend purchasing your tickets ahead of time online as drive-in spots are limited and do quite frequently sell out.  Online ticket sales for each show will end an hour before gates open.</p>
 
               <p>All movies start at dusk with the gates opening 2 hours prior.  Times will be posted on each individual film.</p>
@@ -175,33 +176,514 @@
         </div>
 
         <div id="Lineup" class="tabcontent container">
+          <!-- Moana -->
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Risen.jpg", class:"half-col-img" %>
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/moana.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Risen</span><br>A Fish Family Movie Night</h2>
-                  <h3 class="text-center">April 14, 2017</h3>
-                  <h4 class="text-center">Gates Open: 6:00 p.m.<br>Movie Start Time: 8:00 p.m.</h4>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Moana</span></h2>
+                  <h3 class="text-center yellow">June 1, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
                   <div class="button-container">
-                    <%= link_to "Purchase Tickets", "http://www.thefishomaha.com/content/station-events/fish-family-movie-night-featuring-risen", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/moana-drive-in-movie-night-tickets-34182199880", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
                   </div>
+
+                  <p class="m-t-10 m-l-5">From Walt Disney Animation Studios comes "Moana," a sweeping, CG-animated adventure about a spirited teenager who sails out on a daring mission to prove herself a master wayfinder and fulfill her ancestors' unfinished quest. During her journey, Moana meets the once-mighty demi-god Maui, and together, they traverse the open ocean on an action-packed voyage, encountering enormous fiery creatures and impossible odds.</p>
                 </div>
               </div>
             </div>
           </div>
-
           <hr>
+          <!-- The Goonies -->
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
-              <p class="text-center">Make sure to check back. We will be adding more movies to the summer lineup very soon!</p>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/goonies.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Goonies</span></h2>
+                  <h3 class="text-center yellow">June 4, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-goonies-drive-in-movie-night-tickets-34182223952", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">When two brothers find out they might lose their house they are desperate to find a way to keep their home. They find a treasure map and bring some friends along to find it. They are all out looking for the "X" and trying to get away from a group of bad guys who also want the treasure.</p>
+                </div>
+              </div>
             </div>
           </div>
+          <hr>
+          <!-- Rogue One -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/rogue-one.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Rogue One</span></h2>
+                  <h3 class="text-center yellow">June 8, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/rogue-one-a-star-wars-story-drive-in-movie-night-tickets-34182450630", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Former scientist Galen Erso lives on a farm with his wife and young daughter Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family. Many years later, Galen is now the Empire's lead engineer for the most powerful weapon in the galaxy, the Death Star. Knowing that her father holds the key to its destruction, a vengeful Jyn joins forces with a spy and other resistance fighters to steal the space station's plans for the Rebel Alliance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- The Neverending Story -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/the-neverending-story.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Neverending Story</span></h2>
+                  <h3 class="text-center yellow">June 11, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/neverending-story-drive-in-movie-night-tickets-34182684329", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">On his way to school, Bastian (Barret Oliver) ducks into a bookstore to avoid bullies. Sneaking away with a book called "The Neverending Story," Bastian begins reading it in the school attic. The novel is about Fantasia, a fantasy land threatened by "The Nothing," a darkness that destroys everything it touches. The kingdom needs the help of a human child to survive. When Bastian reads a description of himself in the book, he begins to wonder if Fantasia is real and needs him to survive.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- The Sandlot -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/the-sandlot.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Sandlot</span></h2>
+                  <h3 class="text-center yellow">June 11, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-sandlot-drive-in-movie-nightcws-kickoff-tickets-34182766575", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">When Scottie Smalls (Thomas Guiry) moves to a new neighborhood, he manages to make friends with a group of kids who play baseball at the sandlot. Together they go on a series of funny and touching adventures. The boys run into trouble when Smalls borrows a ball from his stepdad that gets hit over a fence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Lego Batman -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/lego-batman.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Lego Batman</span></h2>
+                  <h3 class="text-center yellow">June 22, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/lego-batman-drive-in-movie-night-tickets-34182855842", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">There are big changes brewing in Gotham, but if Batman (Will Arnett) wants to save the city from the Joker's (Zach Galifianakis) hostile takeover, he may have to drop the lone vigilante thing, try to work with others and maybe, just maybe, learn to lighten up. Maybe his superhero sidekick Robin (Michael Cera) and loyal butler Alfred (Ralph Fiennes) can show him a thing or two.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- The Big Lebowski -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/big-lebowski.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Big Lebowski</span></h2>
+                  <h3 class="text-center yellow">June 23, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-big-lebowski-drive-in-movie-night-tickets-34182888941", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Jeff Bridges plays Jeff Lebowski who insists on being called "the Dude," a laid-back, easygoing burnout who happens to have the same name as a millionaire whose wife owes a lot of dangerous people a whole bunch of money -- resulting in the Dude having his rug soiled, sending him spiraling into the Los Angeles underworld.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- The Princess Bride -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/the-princess-bride.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Princess Bride</span></h2>
+                  <h3 class="text-center yellow">June 24, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-princess-bride-drive-in-movie-night-tickets-34182953133", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">A fairy tale adventure about a beautiful young woman and her one true love. He must find her after a long separation and save her. They must battle the evils of the mythical kingdom of Florin to be reunited with each other. Based on the William Goldman novel "The Princess Bride" which earned its own loyal audience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Dazed and Confused -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/dazed-and-confused.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Dazed and Confused</span></h2>
+                  <h3 class="text-center yellow">June 25, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/dazed-and-confused-drive-in-movie-night-tickets-34183108598", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">This coming-of-age film follows the mayhem of group of rowdy teenagers in Austin, Texas, celebrating the last day of high school in 1976. The graduating class heads for a popular pool hall and joins an impromptu keg party, however star football player Randall "Pink" Floyd (Jason London) has promised to focus on the championship game and abstain from partying. Meanwhile, the incoming freshmen try to avoid being hazed by the seniors, most notably the sadistic bully Fred O'Bannion (Ben Affleck).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Independence Day -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/independence-day.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Independence Day</span></h2>
+                  <h3 class="text-center yellow">June 29, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/independence-day-drive-in-movie-night-tickets-34183356339", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">In the epic adventure film "Independence Day," strange phenomena surface around the globe. The skies ignite. Terror races through the world's major cities. As these extraordinary events unfold, it becomes increasingly clear that a force of incredible magnitude has arrived; its mission: total annihilation over the Fourth of July weekend. The last hope to stop the destruction is an unlikely group of people united by fate and unimaginable circumstances.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Dumb and Dumber -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/dumb-and-dumber.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Dumb and Dumber</span></h2>
+                  <h3 class="text-center yellow">July 2, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/dumb-and-dumber-drive-in-movie-night-tickets-34183599065", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Imbecilic best friends Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels) stumble across a suitcase full of money left behind in Harry's car by Mary Swanson (Lauren Holly), who was on her way to the airport. The pair decide to go to Aspen, Colo., to return the money, unaware that it is connected to a kidnapping. As Harry and Lloyd -- who has fallen in love with Mary -- are pursued across the country by hired killers and police, they find both their friendship and their brains tested.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Civil War -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/civil-war.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Captain America</span><br>Civil War</h2>
+                  <h3 class="text-center yellow">July 6, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/captain-america-civil-war-drive-in-movie-nightprelude-to-spider-man-homecoming-tickets-34183642194", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Political pressure mounts to install a system of accountability when the actions of the Avengers lead to collateral damage. The new status quo deeply divides members of the team. Captain America (Chris Evans) believes superheroes should remain free to defend humanity without government interference. Iron Man (Robert Downey Jr.) sharply disagrees and supports oversight. As the debate escalates into an all-out feud, Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner) must pick a side.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Jurassic World -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/jurassic-world.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Jurassic World</span></h2>
+                  <h3 class="text-center yellow">July 9, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/jurassic-world-drive-in-movie-night-tickets-34183998259", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Located off the coast of Costa Rica, the Jurassic World luxury resort provides a habitat for an array of genetically engineered dinosaurs, including the vicious and intelligent Indominus rex. When the massive creature escapes, it sets off a chain reaction that causes the other dinos to run amok. Now, it's up to a former military man and animal expert (Chris Pratt) to use his special skills to save two young brothers and the rest of the tourists from an all-out, prehistoric assault.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- WALL-E -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/walle.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">WALL-E</span></h2>
+                  <h3 class="text-center yellow">July 13, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/wall-e-drive-in-movie-night-tickets-34184121628", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">WALL-E, short for Waste Allocation Load Lifter Earth-class, is the last robot left on Earth. He spends his days tidying up the planet, one piece of garbage at a time. But during 700 years, WALL-E has developed a personality, and he's more than a little lonely. Then he spots EVE (Elissa Knight), a sleek and shapely probe sent back to Earth on a scanning mission. Smitten WALL-E embarks on his greatest adventure yet when he follows EVE across the galaxy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Big Trouble -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/big-trouble-in-little-china.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Big Trouble in Little China</span></h2>
+                  <h3 class="text-center yellow">July 14, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/big-trouble-in-little-china-drive-in-movie-night-tickets-34184267063", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre conflict within, and underneath, San Francisco's Chinatown. An ancient Chinese prince and Chinatown crime lord has kidnapped a beautiful green-eyed woman, who is the fiancee to Jack's best friend. Jack must help his friend rescue the girl before the evil Lo Pan uses her to break the ancient curse that keeps him a fleshless and immortal spirit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Mean Girls -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/mean-girls.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Mean Girls</span></h2>
+                  <h3 class="text-center yellow">July 16, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/mean-girls-drive-in-movie-night-tickets-34184341285", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Teenage Cady Heron (Lindsay Lohan) was educated in Africa by her scientist parents. When her family moves to the suburbs of Illinois, Cady finally gets to experience public school and gets a quick primer on the cruel, tacit laws of popularity that divide her fellow students into tightly knit cliques. She unwittingly finds herself in the good graces of an elite group of cool students dubbed "the Plastics," but Cady soon realizes how her shallow group of new friends earned this nickname.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Ghostbusters -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/ghostbusters.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Ghostbusters</span></h2>
+                  <h3 class="text-center yellow">July 20, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/ghostbusters-drive-in-movie-night-tickets-34184475687", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">After the members of a team of scientists (Harold Ramis, Dan Aykroyd, Bill Murray) lose their cushy positions at a university in New York City, they decide to become "ghostbusters" to wage a high-tech battle with the supernatural for money. They stumble upon a gateway to another dimension, a doorway that will release evil upon the city. The Ghostbusters must now save New York from complete destruction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Harry Potter -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/harry-potter.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Harry Potter</span><br>and the Socerer's Stone</h2>
+                  <h3 class="text-center yellow">July 23, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/harry-potter-drive-in-movie-night-tickets-34184513801", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Toy Story -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/toy-story.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Toy Story</span></h2>
+                  <h3 class="text-center yellow">July 30, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/toy-story-drive-in-movie-night-tickets-34184781602", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Up -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/up.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Up</span></h2>
+                  <h3 class="text-center yellow">August 10, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/up-drive-in-movie-night-tickets-34184883908", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Carl Fredricksen (Ed Asner), a 78-year-old balloon salesman, is about to fulfill a lifelong dream. Tying thousands of balloons to his house, he flies away to the South American wilderness. But curmudgeonly Carl's worst nightmare comes true when he discovers a little boy named Russell is a stowaway aboard the balloon-powered house.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Twister -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/twister.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Twister</span></h2>
+                  <h3 class="text-center yellow">August 13, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/twister-drive-in-movie-night-tickets-34184955121", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">During the approach of the most powerful storm in decades, university professor Dr. Jo Harding (Helen Hunt) and an underfunded team of students prepare the prototype for Dorothy, a ground-breaking tornado data-gathering device conceived by her estranged husband, Bill (Bill Paxton). When Harding tells Bill that Dorothy is ready for testing -- and that their privately funded rival Dr. Jonas Miller (Cary Elwes) has stolen the idea and built his own -- Bill rejoins the team for one last mission.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Stand By Me -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/stand-by-me.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Stand By Me</span></h2>
+                  <h3 class="text-center yellow">August 17, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/stand-by-me-drive-in-movie-night-tickets-34185019313", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">After learning that a stranger has been accidentally killed near their rural homes, four Oregon boys decide to go see the body. On the way, Gordie Lachance (Wil Wheaton), Vern Tessio (Jerry O'Connell), Chris Chambers (River Phoenix) and Teddy Duchamp (Corey Feldman) encounter a mean junk man and a marsh full of leeches, as they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Beauty and The Beast 2017 -->
+          <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/beauty_and_the_beast.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Beauty and the Beast</span></h2>
+                  <h3 class="text-center yellow">August 19, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/beauty-and-the-beast-2017-drive-in-movie-night-tickets-34185148700", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Belle (Emma Watson), a bright, beautiful and independent young woman, is taken prisoner by a beast (Dan Stevens) in its castle. Despite her fears, she befriends the castle's enchanted staff and learns to look beyond the beast's hideous exterior, allowing her to recognize the kind heart and soul of the true prince that hides on the inside.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
         </div>
       </div>
     </div>
   </div>
-<!-- ******************* /Page Tabs ******************* -->
+<!-- ******************* /Page Tabs *******************
