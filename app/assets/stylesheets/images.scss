@@ -16,13 +16,12 @@
 	.half-col-img {
 		display: initial;
 		float: right;
-	}
-
-	.half-col-img {
 		padding-bottom: 0;
 	}
 }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 1024px) {
+	.half-col-img {
+		width: 80%;
+	}
 }

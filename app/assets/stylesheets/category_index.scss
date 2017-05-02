@@ -39,6 +39,11 @@
     margin-top: 5%;
 }
 
+.action-button:focus {
+    color: white;
+    background-color: $blue;
+}
+
 .about-tagline {
 	text-align: center;
 	font-family: 'Realist';
