@@ -1,0 +1,20 @@
+@import "variables"
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+	font-family: 'Realist';
+  	src: url("Realist.otf");
+}
+
+@font-face {
+	font-family: 'Heartland Rough';
+  	src: url("Heartland Rough.otf");
+}
+
+.accent-font-1 {font-family: 'Heartland Rough';}
+.accent-font-2 {font-family: 'Realist';}
+
+@media screen and (min-width: 992px) {
+	.accent-font-1 {font-size: 1.5em;}
+	.accent-font-2 {font-size: 1em;}
+}
