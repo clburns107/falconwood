@@ -1,10 +1,29 @@
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+	font-family: 'Realist';
+  	src: url("Realist.otf");
+}
+
+@font-face {
+	font-family: 'Heartland Rough';
+  	src: url("Heartland Rough.otf");
+}
 
 body {
 	background-color: white;
 	color: $drk-grey;
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
+}
+
+.accent-font-1 {
+	font-family: 'Heartland Rough';
+}
+
+.accent-font-2 {
+	font-family: 'Realist';
 }
 
 a.black-background-link{
@@ -117,7 +136,16 @@ ul {
 
 }
 
+@media screen and (min-width: 992px) {
+	.accent-font-1 {
+		font-size: 1.5em;
+	}
 
+	.accent-font-2 {
+		font-size: 1em;
+	}
+
+}
 
 @media screen and (min-width: 1200px) {
 	.social-media-icon {
