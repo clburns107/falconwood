@@ -1,0 +1,26 @@
+@import "variables";
+
+//link colors for a black background
+a.black-background-link {
+	color: $yellow;
+	&:hover {
+		color: $blue;
+	}
+}
+
+//link colors for a white background
+a.white-background-link {
+	color: $blue;
+	&:hover {
+		color: $drk-grey;
+	}
+}
+
+//background colors
+.background-black {background-color: $black;}
+.background-yellow {background-color: $yellow;}
+.background-blue {background-color: $blue;}
+.background-lt-grey {background-color: $lt-grey;}
+.background-md-grey {background-color: $md-grey;}
+.background-drk-grey {background-color: $drk-grey;}
+.background-white {background-color: white;}

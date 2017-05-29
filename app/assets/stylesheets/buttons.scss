@@ -1,0 +1,19 @@
+@import "variables";
+
+.button-container {text-align: center;}
+
+.action-button {
+	background-color: $blue;
+	color: white;
+	font-size: 18px;
+	border-radius: 7px;
+	border: none;
+	text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    &:focus {
+    	color: white;
+    	background-color: $blue;
+    }
+}
