@@ -11,9 +11,8 @@
 	font-family: 'Heartland Rough';
   	src: url("Heartland Rough.otf");
 }
-
-.accent-font-1 {font-family: 'Heartland Rough';}
-.accent-font-2 {font-family: 'Realist';}
+.main-accent-font {font-family: 'Heartland Rough';}
+.secondary-accent-font {font-family: 'Realist';}
 
 //font colors
 .yellow {color: $yellow;}
@@ -21,9 +20,11 @@
 .lt-grey {color: $lt-grey;}
 .md-grey {color: $md-grey;}
 .drk-grey {color: $drk-grey;}
-.white {color: white;}
+.white {color: $white;}
+.black {color: $black}
+.red {color: $red;}
 
 @media screen and (min-width: 992px) {
-	.accent-font-1 {font-size: 1.5em;}
-	.accent-font-2 {font-size: 1em;}
+	.main-accent-font .larger {font-size: 1.5em;}
+	.secondary-accent-font .larger {font-size: 1em;}
 }
