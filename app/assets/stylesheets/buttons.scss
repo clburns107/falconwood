@@ -9,9 +9,9 @@
 	border-radius: 7px;
 	border: none;
 	text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 5% 2% 0 2%;
     &:focus {
     	color: $black;
     	background-color: $lt-grey;
@@ -20,4 +20,14 @@
         color: $black;
         background-color: $yellow;
     }
+}
+
+.mobile-nav-menu {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $red;
+    color: $white;
+    margin-bottom: 5%;
 }

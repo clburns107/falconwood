@@ -5,11 +5,13 @@
         <div id="homepage-overlay" class="overlay">
           <div class="overlay-content header-img">
             <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Homepage/falconwood-logo-white-400.png", class:"overlay-logo"%>
-            <h1 class="main-accent-font larger yellow">Welcome to Falconwood Park</h1>
+            <h1 class="main-accent-font larger yellow p-t-2">Welcome to Falconwood Park</h1>
+            <h2 class="secondary-accent-font larger red p-t-2">Home of</h2>
+             <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Posters/Hulla-Logo.png", class:"overlay-logo temp"%>
             <div class="button-container">
+              <%= link_to "Hullaba-Whaa?", live_music_path, class: "btn btn-secondary action-button", role: "button" %>
               <a href="javascript:void(0)" class="btn btn-secondary action-button" onclick="closeOverlay()">Continue to Site <!-- <i class="fa fa-arrow-circle-right fa-1x white" aria-hidden="true"></i> -->
               </a>
-              <%= link_to "Hullaba-Whaa?", live_music_path, class: "btn btn-secondary action-button", role: "button" %>
             </div>
           </div>
         </div>
