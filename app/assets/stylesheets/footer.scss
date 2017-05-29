@@ -12,16 +12,6 @@
 	border-radius: 50%;
 }
 
-.social-media-icon {
-	width: 12%;
-	margin: 2px;
-}
-
-.tab-social-media-icon {
-	width: 13%;
-	margin-top: 2%;
-}
-
 @media screen and (min-width: 768px) {
 	.footer-img {
 		width: 20%;
@@ -31,26 +21,4 @@
 		font-size: 1.5rem;
 	}
 
-	.social-media-icon {
-		width: 6%;
-		margin: 2px;
-	}
-
-	.tab-social-media-icon {
-		width: 10%;
-		margin-top: 2%;
-	}
-
-}
-
-@media screen and (min-width: 1200px) {
-	.social-media-icon {
-		width: 3%;
-		margin: 2px;
-	}
-
-	.tab-social-media-icon {
-		width: 7%;
-		margin-top: 2%;
-	}
 }
