@@ -2,15 +2,17 @@
 
 //link colors for a black background
 a.black-background-link {
-	color: $yellow;
+	color: $red;
+	text-decoration: underline;
 	&:hover {
-		color: $blue;
+		color: $yellow;
 	}
 }
 
 //link colors for a white background
 a.white-background-link {
-	color: $blue;
+	color: $black;
+	text-decoration: underline;
 	&:hover {
 		color: $drk-grey;
 	}
