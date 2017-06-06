@@ -27,9 +27,14 @@
   }
 
   .sidenav-link:hover {
-    color: $white;
-    background-color: $red;
+    color: $black;
+    background-color: white;
   }
+
+  /* When you mouse over the navigation links, change their color */
+  // .sidenav a:hover, .offcanvas a:focus{
+  //     color: #f1f1f1;
+  // }
 
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
@@ -55,6 +60,16 @@
     text-decoration: none;
     color: $black;
     padding: 2% 4%;
+  }
+
+  .mobile-nav-menu {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $blue;
+    color: white;
+    margin-bottom: 5%;
   }
 
   .cat-index-nav {

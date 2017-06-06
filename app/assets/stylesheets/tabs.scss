@@ -1,9 +1,5 @@
 @import "variables";
 
-.tabs {
-    color: $lt-grey;
-}
-
 /* Style the tab */
 div.tab {
     overflow: hidden;
@@ -22,7 +18,7 @@ div.tab a {
 .tablinks {
     width: 100%;
     text-align: center;
-    color: $red;
+    color: $drk-grey;
     text-decoration: none;
     padding-top: 20px;
     padding-bottom: 5px;
@@ -32,13 +28,13 @@ div.tab a {
 
 .tablinks:hover {
     background-color: $drk-grey;
-    color: $white;
+    color: white;
     text-decoration: none;
 }
 
 .tablinks:focus, .active {
-    background-color: $yellow;
-    color: $black;
+    background-color: $blue;
+    color: white;
     text-decoration: none;
 }
 
@@ -70,16 +66,8 @@ div.tab a {
     width: 100%;
 }
 
-.details-container {
-    max-width: 960px;
-}
-
 .lineup-title {
     font-family: 'Heartland Rough';
-}
-
-ul.drive-in {
-    padding: 5% 0 5% 0;
 }
 
 @-webkit-keyframes fadeEffect {

@@ -11,13 +11,18 @@
 <!-- ******************* About ******************* -->
   <div id="about"></div>
   <div class="container">
-    <div class="row m-t-10">
+    <div class="row content-container">
       <div class="col-sm-12 col-md-6">
-        <h1 class="text-center p-b-5"><span class="secondary-accent-font larger">About our</span><br><span class="main-accent-font larger">Live Music</span></h1>
+        <h1 class="text-center content-header"><span class="accent-font-2">About our</span><br><span class="accent-font-1">Live Music</span></h1>
         <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Live+Music/about-music.jpg", class:"about-img"%>
       </div>
       <div class="col-sm-12 col-md-6">
         <p>Falconwood Park is proud to be the home of Hullabaloo, FishFest, and Omaha's first 'Camphitheater'!  Our large outdoor stage or our intimate indoor venue have fast become the area's most popular locations for producers or national acts to book their shows in the Omaha market. We are known as the Falconwood Park Camphitheater as most of our events allow camping! We would rather you stay safe after one of our events and sleep under the stars or in one of our glamorous camping tents.</p>
+
+        <p>Hullabaloo Music Festival is now in its seventh year and is well known for bringing in a mix of up and coming regional artists and the hottest touring national acts in the scene. We have a large scale production with an intimate, boutique festival feel as well as a family-friendly environment. Take a walk through our electric forest art installation or paint a canvas in our community art area.</p>
+
+        <p>FishFest has moved from an arena setting to the great outdoors in an effort to expand and offer a unique concert going experience. There will be 3 days of family-friendly entertainment, music, and praise at Nebraska's largest Christian Music Festival!</p>
+
         <div class="button-container">
           <%= link_to "About Our Park", about_path, class: "btn btn-secondary action-button", role: "button" %>
         </div>
@@ -28,8 +33,8 @@
 
 <!-- ******************* Page Tabs ******************* -->
   <div id="details"></div>
-  <div class="container-fluid tabs">
-    <div class="row m-t-10 background-black"
+  <div class="container-fluid">
+    <div class="row content-container background-black"
       <div class="col-sm-12">
         <div class="tab">
           <a href="javascript:void(0)" class="tablinks four" onclick="openCity(event, 'Details')"><h3>Details</h3></a>
@@ -41,7 +46,7 @@
         <div id="Details" class="tabcontent container">
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
-              <h1 class="yellow text-center p-t-5 main-accent-font larger">Booking</h1>
+              <h1 class="yellow text-center p-t-5 accent-font-1">Booking</h1>
               <p>To book your concert, festival, or event at Falconwood Park email Brandon Miller at <a class="black-background-link" href="mailto:falconwoodpark@gmail.com">falconwoodpark@gmail.com</a>.   We will work with you to provide the best environment for the success of your event.  Falconwood Park can provide all the production or step back and let you take the reins.</p>
             </div>
           </div>
@@ -148,8 +153,8 @@
             </div>
           </div><!-- /container -->
         </div>
+
         <div id="Lineup" class="tabcontent container">
-          <!-- Fish Fest -->
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
               <div class="row">
@@ -157,10 +162,8 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Lineup/FFOmaha2017_Poster_11x17_Reveal7.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">FishFest</span></h2>
-                  <h3 class="text-center yellow">July 28, 2017 - July 30, 2017</h3>
-                  <!-- <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4> -->
-                  <p>FishFest has moved from an arena setting to the great outdoors in an effort to expand and offer a unique concert going experience. There will be 3 days of family-friendly entertainment, music, and praise at Nebraska's largest Christian Music Festival!</p>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">FishFest</span></h2>
+                  <h3 class="text-center">July 28, 2017 - July 30, 2017</h3>
                   <div class="button-container">
                     <%= link_to "Purchase Tickets", "http://www.fishfestomaha.com/", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
                   </div>
@@ -168,31 +171,32 @@
               </div>
             </div>
           </div>
+
           <hr>
-          <!-- /Fish Fest -->
-          <!-- Hullabaloo -->
+
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Lineup/hullabaloo-2017-lineup.jpg", class:"half-col-img" %>
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Lineup/Hullabaloo+Courtney.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Hullabaloo</span><br>Music &amp; Camping Festival</h2>
-                  <h3 class="text-center yellow">August 3, 2017 - August 5, 2017</h3>
-                  <!-- <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4> -->
-                  <p>Hullabaloo Music Festival is now in its seventh year and is well known for bringing in a mix of up and coming regional artists and the hottest touring national acts in the scene. We have a large scale production with an intimate, boutique festival feel as well as a family friendly environment. Take a walk through our electric forest art installation or paint a canvas in our community art area. Whatever you do, make sure you have fun and check out an event at Falconwood Park this and every season!</p>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Hullabaloo</span><br>Music &amp; Camping Festival</h2>
+                  <h3 class="text-center ">August 3, 2017 - August 5, 2017</h3>
                   <div class="button-container">
-                    <%= link_to "Learn More", "http://www.hullabaloomusicfestival.com/", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
                     <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/hullabaloo-2017-tickets-32895449174", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+                  <div class="button-container">
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/facebook.png", :class => "tab-social-media-icon"), "https://www.facebook.com/events/1879134145704315/", :target => "_blank" %>
+
+                    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/falconwood/social-media/website-link-yellow.png", :class => "tab-social-media-icon"), "http://www.hullabaloomusicfestival.com/", :target => "_blank" %>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <hr>
-          <!-- /Hullabaloo -->
         </div>
+
         <div id="Calendar" class="tabcontent full-width">
           <div class="responsiveCal">
             <iframe src="https://calendar.google.com/calendar/embed?src=s15ajnt500binbtc9mt93ba5ls%40group.calendar.google.com&amp;ctz=America/Chicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

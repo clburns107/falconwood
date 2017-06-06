@@ -28,8 +28,7 @@
   .overlay-content {
     z-index: 100;
     position: relative;
-    // top: 25%; // centers the overlay logo and everything beneath it
-    top: 2%;
+    top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -45,13 +44,7 @@
   }
 
   .overlay-logo {
-    // width: 80%;//enlarged when it is the only jpg on the overlay page
-    width: 30%;
-  }
-
-  .overlay-logo.temp {
-    // width: 30%;//enlarged when it is the only jpg on the overlay page
-    width: 75%;
+    width: 80%;
   }
 
   .overlay p.continue {
@@ -59,7 +52,7 @@
     color: white;
   }
   .overlay a:hover, .overlay a:focus {
-      color: $black;
+      color: #f1f1f1;
   }
 
   .closebtn {
@@ -82,12 +75,6 @@
 
 @media screen and (min-width: 426px) {
   .overlay-logo {
-    // width: 30%;//enlarged when it is the only jpg on the overlay page
-    width: 10%;
-  }
-
-  .overlay-logo.temp {
-    // width: 30%;//enlarged when it is the only jpg on the overlay page
-    width: 50%;
+    width: 30%;
   }
 }

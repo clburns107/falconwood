@@ -2,19 +2,21 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">
         <div id="homepage-overlay" class="overlay">
           <div class="overlay-content header-img">
             <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Homepage/falconwood-logo-white-400.png", class:"overlay-logo"%>
-            <h1 class="main-accent-font larger yellow p-t-2">Welcome to Falconwood Park</h1>
-            <h2 class="secondary-accent-font larger red p-t-2">Home of</h2>
-             <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Posters/Hulla-Logo.png", class:"overlay-logo temp"%>
-            <div class="button-container">
-              <%= link_to "Hullaba-Whaa?", live_music_path, class: "btn btn-secondary action-button", role: "button" %>
-              <a href="javascript:void(0)" class="btn btn-secondary action-button" onclick="closeOverlay()">Continue to Site <!-- <i class="fa fa-arrow-circle-right fa-1x white" aria-hidden="true"></i> -->
-              </a>
-            </div>
+            <p class="accent-font-1">Welcome to Falconwood Park</p>
+            <p class="continue">Continue to Site<br><i class="fa fa-arrow-circle-right fa-1x" aria-hidden="true"></i></p>
           </div>
+          <!-- <video class="hidden-md-down" controls autoplay poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg">
+            <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+            <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm">
+            <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg">
+            <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" title="No video playback capabilities, please download the video below">
+          </video> -->
         </div>
+      </a>
     </div>
   </div>
 </div>
@@ -29,11 +31,11 @@
           <a href="weddings">
             <div class="strip__content">
               <div class="title_background">
-                <h1 class="strip__title main-accent-font larger">Weddings</h1>
+                <h1 class="strip__title accent-font-1">Weddings</h1>
               </div>
               <div class="strip__inner-text hidden-sm-down">
-                <h2 class=" main-accent-font larger">Weddings</h2>
-                <p class="secondary-accent-font larger">A unique indoor/outdoor space, flexibility on catering, affordable pricing and more!</p>
+                <h2 class=" accent-font-1">Weddings</h2>
+                <p class="accent-font-2">A unique indoor/outdoor space, flexibility on catering, affordable pricing and more!</p>
                 <p>
                   <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                 </p>
@@ -45,11 +47,11 @@
           <a href="live_music">
             <div class="strip__content">
               <div class="title_background">
-                <h1 class="strip__title main-accent-font larger">Live Music</h1>
+                <h1 class="strip__title accent-font-1">Live Music</h1>
               </div>
               <div class="strip__inner-text hidden-sm-down">
-                <h2 class=" main-accent-font larger">Live Music</h2>
-                <p class="secondary-accent-font larger">Home of Hullabaloo, FishFest, and Omaha's first 'Camphitheater'.</p>
+                <h2 class=" accent-font-1">Live Music</h2>
+                <p class="accent-font-2">Home of Hullabaloo, FishFest, and Omaha's first 'Camphitheater'.</p>
                 <p>
                   <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                 </p>
@@ -61,11 +63,11 @@
           <a href="drive_in">
             <div class="strip__content">
               <div class="title_background">
-                <h1 class="strip__title main-accent-font larger">Drive-In</h1>
+                <h1 class="strip__title accent-font-1">Drive-In</h1>
               </div>
               <div class="strip__inner-text hidden-sm-down">
-                <h2 class=" main-accent-font larger">Drive-In</h2>
-                <p class="secondary-accent-font larger">Come discover or relive your favorite movie-going experience.</p>
+                <h2 class=" accent-font-1">Drive-In</h2>
+                <p class="accent-font-2">Come discover or relive your favorite movie-going experience.</p>
                 <p>
                   <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                 </p>
@@ -77,11 +79,11 @@
           <a href="camping">
             <div class="strip__content">
               <div class="title_background">
-                <h1 class="strip__title main-accent-font larger">Camping</h1>
+                <h1 class="strip__title accent-font-1">Camping</h1>
               </div>
               <div class="strip__inner-text hidden-sm-down">
-                <h2 class=" main-accent-font larger">Camping</h2>
-                <p class="secondary-accent-font larger">Book your camping, glamping, or seasonal RV spot.</p>
+                <h2 class=" accent-font-1">Camping</h2>
+                <p class="accent-font-2">Book your camping, glamping, or seasonal RV spot.</p>
                 <p>
                   <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                 </p>
@@ -93,11 +95,11 @@
           <a href="private_events">
             <div class="strip__content">
               <div class="title_background">
-                <h1 class="strip__title main-accent-font larger">Private Events</h1>
+                <h1 class="strip__title accent-font-1">Private Events</h1>
               </div>
               <div class="strip__inner-text hidden-sm-down">
-                <h2 class=" main-accent-font larger">Private Events</h2>
-                <p class="secondary-accent-font larger">Company picnics, family reunions, church camps, and any other reason to Celebrate Life.</p>
+                <h2 class=" accent-font-1">Private Events</h2>
+                <p class="accent-font-2">Company picnics, family reunions, church camps, and any other reason to Celebrate Life.</p>
                 <p>
                   <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                 </p>

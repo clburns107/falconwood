@@ -11,9 +11,9 @@
 <!-- ******************* About ******************* -->
   <div id="about"></div>
   <div class="container">
-    <div class="row m-t-10">
+    <div class="row content-container">
       <div class="col-sm-12 col-md-6">
-        <h1 class="text-center p-b-5"><span class="secondary-accent-font larger">About our</span><br><span class="main-accent-font larger">Drive-In</span></h1>
+        <h1 class="text-center content-header"><span class="accent-font-2">About our</span><br><span class="accent-font-1">Drive-In</span></h1>
         <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/about-drivein.jpg", class:"about-img"%>
       </div>
       <div class="col-sm-12 col-md-6">
@@ -31,8 +31,8 @@
 
 <!-- ******************* Page Tabs ******************* -->
   <div id="details"></div>
-  <div class="container-fluid tabs">
-    <div class="row m-t-10 background-black"
+  <div class="container-fluid">
+    <div class="row content-container background-black"
       <div class="col-sm-12">
         <div class="tab">
           <a href="javascript:void(0)" class="tablinks four" onclick="openCity(event, 'Details')"><h3>Details</h3></a>
@@ -41,16 +41,16 @@
           <a href="javascript:void(0)" class="tablinks four" onclick="openCity(event, 'Calendar')"><h3>Calendar</h3></a>
         </div>
 
-        <div id="Details" class="tabcontent container details-container">
+        <div id="Details" class="tabcontent container">
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
 
-              <h1 class="yellow text-center p-t-5 main-accent-font larger">Ticket Info</h1>
+              <h1 class="yellow text-center p-t-5 accent-font-1">Ticket Info</h1>
 
-              <ul class="yellow text-center drive-in secondary-accent-font larger">
-                <li><h3>Single Passenger - $7 per vehicle</h3></li>
-                <li><h3>Two Passengers - $14 per vehicle</h3></li>
-                <li><h3>Three or More Passengers - $20 per vehicle</h3></li>
+              <ul class="yellow text-center p-t-5 p-b-5 accent-font-2">
+                <li>Single Passenger - $7 per vehicle</li>
+                <li>Two Passengers - $14 per vehicle</li>
+                <li>Three or More Passengers - $20 per vehicle</li>
               </ul>
 
               <p>Falconwood Park does sell drive-in tickets at the gate, however, we <em>strongly</em> recommend purchasing your tickets ahead of time online as drive-in spots are limited and do quite frequently sell out.  Online ticket sales for each show will end an hour before gates open.</p>
@@ -61,26 +61,23 @@
 
               <p>Tickets for our drive-in are priced per vehicle and are based on occupancy.</p>
 
-              <h3 class="yellow text-center p-t-5 secondary-accent-font larger">Drive-In Passes</h3>
+              <h3 class="yellow text-center p-t-5 accent-font-2">Drive-In Passes</h3>
 
               <p>A Drive-In pass is guaranteed a drive-in parking spot.  150 Drive-in spots are available. Spots are filled on a first come first serve basis.</p>
 
-              <h3 class="yellow text-center p-t-5 secondary-accent-font larger">Park and Walk Passes</h3>
+              <h3 class="yellow text-center p-t-5 accent-font-2">Park and Walk Passes</h3>
 
               <p>Once the drive-in spots have been filled we have additional ticketing called a Park and Walk. Park and Walk patrons will park in a separate lot and are encouraged to bring blankets or chairs up to the viewing area in front of the screen to view the movie or meet up with your friends at their car. If you are getting tickets at the gate we suggest that you bring seating just in case we sell out of drive-in spots.</p>
 
-              <h3 class="yellow text-center p-t-5 secondary-accent-font larger">Tent Passes</h3>
+              <h3 class="yellow text-center p-t-5 accent-font-2">Tent Passes</h3>
 
               <p>In addition to your Drive-In or Park and Walk pass, if you would like to camp after the show, you may purchase a tent pass for an extra $10 charge per tent.</p>
 
-              <h1 class="yellow text-center p-t-5 main-accent-font larger">Booking</h1>
+              <h1 class="yellow text-center p-t-5 accent-font-1">Booking</h1>
 
               <p>To book a private drive-in movie event at Falconwood Park email Brandon Miller at <a class="black-background-link" href="mailto:falconwoodpark@gmail.com">falconwoodpark@gmail.com</a>.  We will work with you to provide the best environment for the success of your event.</p>
  
               <p>Check out our calendar for dates, times, and tickets.</p>
-
-              <p class="font-sm text-center">*Falconwood Park reserves the right to cancel/reschedule movies as necessary. Accommodations will be made for any tickets purchased to an event that needs to be rescheduled or canceled.
-              <br>*Taxes and fees not included in pricing shown.</p>
 
             </div>
           </div>
@@ -187,7 +184,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/moana.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Moana</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Moana</span></h2>
                   <h3 class="text-center yellow">June 1, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -210,7 +207,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/goonies.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">The Goonies</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Goonies</span></h2>
                   <h3 class="text-center yellow">June 4, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -233,7 +230,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/rogue-one.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Rogue One</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Rogue One</span></h2>
                   <h3 class="text-center yellow">June 8, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -256,7 +253,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/the-neverending-story.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">The Neverending Story</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Neverending Story</span></h2>
                   <h3 class="text-center yellow">June 11, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -279,7 +276,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/the-sandlot.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">The Sandlot</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Sandlot</span></h2>
                   <h3 class="text-center yellow">June 15, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -302,7 +299,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/lego-batman.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Lego Batman</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Lego Batman</span></h2>
                   <h3 class="text-center yellow">June 22, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -325,7 +322,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/big-lebowski.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">The Big Lebowski</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Big Lebowski</span></h2>
                   <h3 class="text-center yellow">June 23, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -348,7 +345,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/the-princess-bride.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">The Princess Bride</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Princess Bride</span></h2>
                   <h3 class="text-center yellow">June 24, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -371,7 +368,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/dazed-and-confused.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Dazed and Confused</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Dazed and Confused</span></h2>
                   <h3 class="text-center yellow">June 25, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -394,7 +391,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/independence-day.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Independence Day</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Independence Day</span></h2>
                   <h3 class="text-center yellow">June 29, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -417,7 +414,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/dumb-and-dumber.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Dumb and Dumber</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Dumb and Dumber</span></h2>
                   <h3 class="text-center yellow">July 2, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -432,25 +429,23 @@
           </div>
           <hr>
 
-          <!-- Big Trouble in Little China -->
+          <!-- Captain America Civil War -->
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/big-trouble-in-little-china.jpg", class:"half-col-img" %>
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/civil-war.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Big Trouble in Little China</span></h2>
-
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Captain America</span><br>Civil War</h2>
                   <h3 class="text-center yellow">July 6, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
                   <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/big-trouble-in-little-china-drive-in-movie-night-tickets-34184267063", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/captain-america-civil-war-drive-in-movie-nightprelude-to-spider-man-homecoming-tickets-34183642194", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
                   </div>
 
-                  <p class="m-t-10 m-l-5">Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre conflict within, and underneath, San Francisco's Chinatown. An ancient Chinese prince and Chinatown crime lord has kidnapped a beautiful green-eyed woman, who is the fiancee to Jack's best friend. Jack must help his friend rescue the girl before the evil Lo Pan uses her to break the ancient curse that keeps him a fleshless and immortal spirit.</p>
+                  <p class="m-t-10 m-l-5">Political pressure mounts to install a system of accountability when the actions of the Avengers lead to collateral damage. The new status quo deeply divides members of the team. Captain America (Chris Evans) believes superheroes should remain free to defend humanity without government interference. Iron Man (Robert Downey Jr.) sharply disagrees and supports oversight. As the debate escalates into an all-out feud, Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner) must pick a side.</p>
                 </div>
               </div>
             </div>
@@ -465,7 +460,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/jurassic-world.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Jurassic World</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Jurassic World</span></h2>
                   <h3 class="text-center yellow">July 9, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -488,7 +483,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/walle.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">WALL-E</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">WALL-E</span></h2>
                   <h3 class="text-center yellow">July 13, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -503,6 +498,29 @@
           </div>
           <hr>
 
+          <!-- Big Trouble in Little China -->
+          <!-- <div class="row p-t-5 p-b-5">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/big-trouble-in-little-china.jpg", class:"half-col-img" %>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Big Trouble in Little China</span></h2>
+                  <h3 class="text-center yellow">July 14, 2017</h3>
+                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
+                  
+                  <div class="button-container">
+                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/big-trouble-in-little-china-drive-in-movie-night-tickets-34184267063", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                  </div>
+
+                  <p class="m-t-10 m-l-5">Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre conflict within, and underneath, San Francisco's Chinatown. An ancient Chinese prince and Chinatown crime lord has kidnapped a beautiful green-eyed woman, who is the fiancee to Jack's best friend. Jack must help his friend rescue the girl before the evil Lo Pan uses her to break the ancient curse that keeps him a fleshless and immortal spirit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr> -->
+
           <!-- Mean Girls -->
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
@@ -511,7 +529,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/mean-girls.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Mean Girls</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Mean Girls</span></h2>
                   <h3 class="text-center yellow">July 16, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -534,7 +552,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/ghostbusters.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">The Ghostbusters</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Ghostbusters</span></h2>
                   <h3 class="text-center yellow">July 20, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -557,7 +575,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/harry-potter.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Harry Potter</span><br>and the Sorcerer's Stone</h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Harry Potter</span><br>and the Sorcerer's Stone</h2>
                   <h3 class="text-center yellow">July 23, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -580,7 +598,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/toy-story.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Toy Story</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Toy Story</span></h2>
                   <h3 class="text-center yellow">July 30, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -603,7 +621,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/blazing-saddles.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Blazing Saddles</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Blazing Saddles</span></h2>
                   <h3 class="text-center yellow">August 6, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -626,7 +644,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/up.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">UP</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">UP</span></h2>
                   <h3 class="text-center yellow">August 10, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -649,7 +667,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/twister.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Twister</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Twister</span></h2>
                   <h3 class="text-center yellow">August 13, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -672,7 +690,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/stand-by-me.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Stand By Me</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Stand By Me</span></h2>
                   <h3 class="text-center yellow">August 17, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -695,7 +713,7 @@
                   <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/beauty_and_the_beast.jpg", class:"half-col-img" %>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center secondary-accent-font larger"><span class="lineup-title">Beauty and the Beast</span></h2>
+                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Beauty and the Beast</span></h2>
                   <h3 class="text-center yellow">August 19, 2017</h3>
                   <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
                   
@@ -712,7 +730,7 @@
 
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
-              <p class="text-center">Make sure to check back. We will be adding more movies to the summer lineup very soon!</p>
+              <p class="text-center">Make sure to check back. We will be adding more movies to the lineup very soon!</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,14 @@
 @import "variables";
 
+.content-container {
+	margin-top: 10% ;
+}
+
+.content-header {
+	padding-bottom: 5%;
+	color: $blue;
+}
+
 .index-header-img {
 	position: relative;
 	width: 100%;
@@ -13,6 +22,28 @@
     margin-right: auto;
 }
 
+.button-container {
+	text-align: center;
+}
+
+.action-button {
+	background-color: $blue;
+	color: white;
+	font-size: 18px;
+	border-radius: 7px;
+	border: none;
+	text-decoration: none;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.action-button:focus {
+    color: white;
+    background-color: $blue;
+}
+
 .about-tagline {
 	text-align: center;
 	font-family: 'Realist';
@@ -21,5 +52,13 @@
 
 
 @media screen and (min-width: 768px) {
-	.about-img {width: 80%;}
+	.about-img {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.action-button {
+		width: 40%;
+	}
 }
