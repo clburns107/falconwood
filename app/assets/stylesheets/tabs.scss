@@ -18,11 +18,11 @@ div.tab a {
 .tablinks {
     width: 100%;
     text-align: center;
-    color: $drk-grey;
+    color: $md-grey;
     text-decoration: none;
     padding-top: 20px;
     padding-bottom: 5px;
-    border: $drk-grey solid 0.25px;
+    border: $md-grey solid 0.25px;
     font-family: 'Realist';
 }
 
@@ -33,7 +33,7 @@ div.tab a {
 }
 
 .tablinks:focus, .active {
-    background-color: $blue;
+    background-color: $red;
     color: white;
     text-decoration: none;
 }
