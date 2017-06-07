@@ -19,6 +19,10 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-window.onload = function() {
-  document.getElementById("defaultOpen").click();
-};
+// if this url is not the homepage
+if ( window.location.pathname != '/' ){
+    // Index (home) page
+    window.onload = function() {
+      document.getElementById("defaultOpen").click();
+    };
+}
