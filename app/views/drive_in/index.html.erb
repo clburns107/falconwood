@@ -188,547 +188,269 @@
           </div><!-- /container -->
         </div>
 
+        <% @movies = [
+          {:double => false,
+          :title1 => "10 Things I Hate About You", 
+          :date => "June 28, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/10-things-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/10-things-i-hate-about-you-drive-in-movie-night-tickets-46089816883", 
+          :description1 => "Kat Stratford (Julia Stiles) is beautiful, smart and quite abrasive to most of her fellow teens, meaning that she doesn't attract many boys. Unfortunately for her younger sister, Bianca (Larisa Oleynik), house rules say that she can't date until Kat has a boyfriend, so strings are pulled to set the dour damsel up for a romance. Soon Kat crosses paths with handsome new arrival Patrick Verona (Heath Ledger). Will Kat let her guard down enough to fall for the effortlessly charming Patrick?"},
+
+          {:double => false,
+          :title1 => "The Breakfast Club", 
+          :date => "July 5, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Breakfast-Club-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/the-breakfast-club-drive-in-movie-night-tickets-46090022498", 
+          :description1 => "Five high school students from different walks of life endure a Saturday detention under a power-hungry principal (Paul Gleason). The disparate group includes rebel John (Judd Nelson), princess Claire (Molly Ringwald), outcast Allison (Ally Sheedy), brainy Brian (Anthony Michael Hall) and Andrew (Emilio Estevez), the jock. Each has a chance to tell his or her story, making the others see them a little differently -- and when the day ends, they question whether school will ever be the same."},
+
+          {:double => true,
+          :title1 => "The Goonies",
+          :title2 => "Big Trouble in Little China", 
+          :date => "July 5, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Goonies-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/the-goonies-big-trouble-in-little-china-drive-in-movie-night-tickets-46090210059", 
+          :description1 => "Old-fashioned yarn about a band of adventurous kids who take on the might of a property developing company which plans to destroy their home to build a country club. When the children discover an old pirate map in the attic, they follow it into an underground cavern in search of lost treasure but come up against plenty of dangerous obstacles along the way.",
+          :description2 => "Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre conflict within, and underneath, San Francisco's Chinatown. An ancient Chinese prince and Chinatown crime lord has kidnapped a beautiful green-eyed woman, who is the fiancee to Jack's best friend. Jack must help his friend rescue the girl before the evil Lo Pan uses her to break the ancient curse that keeps him a fleshless and immortal spirit."},
+
+          {:double => false,
+          :title1 => "Dazed and Confused",
+          :date => "July 8, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Dazed-and-Confused-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/dazed-and-confused-drive-in-movie-night-tickets-46090314371", 
+          :description1 => "This coming-of-age film follows the mayhem of group of rowdy teenagers in Austin, Texas, celebrating the last day of high school in 1976. The graduating class heads for a popular pool hall and joins an impromptu keg party, however star football player Randall 'Pink' Floyd (Jason London) has promised to focus on the championship game and abstain from partying. Meanwhile, the incoming freshmen try to avoid being hazed by the seniors, most notably the sadistic bully Fred O'Bannion (Ben Affleck)."},
+
+          {:double => false,
+          :title1 => "Indiana Jones and the Last Crusade", 
+          :date => "July 12, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Indiana-Jones-and-the-Last-Crusade-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/indiana-jones-and-the-last-crusade-drive-in-movie-night-tickets-46090364521", 
+          :description1 => "The intrepid explorer Indiana Jones sets out to rescue his father, a medievalist who has vanished while searching for the Holy Grail. Following clues in the old man's notebook, Indy arrives in Venice, where he enlists the help of a beautiful academic, but they are not the only ones who are on the trail, and some sinister old enemies soon come out of the woodwork."},
+
+          {:double => true,
+          :title1 => "Armageddon",
+          :title2 => "Men In Black", 
+          :date => "July 13, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Armageddon-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/armageddon-men-in-black-drive-in-movie-night-tickets-46090578160", 
+          :description1 => "When an asteroid threatens to collide with Earth, NASA honcho Dan Truman (Billy Bob Thornton) determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper (Bruce Willis), who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. (Ben Affleck), who Harry thinks isn't good enough for his daughter (Liv Tyler), until the mission proves otherwise.",
+          :description2 => "Men In Black: </span>They are the best-kept secret in the universe. Working for a highly funded yet unofficial government agency, Kay (Tommy Lee Jones) and Jay (Will Smith) are the Men in Black, providers of immigration services and regulators of all things alien on Earth. While investigating a series of unregistered close encounters, the MIB agents uncover the deadly plot of an intergalactic terrorist who is on a mission to assassinate two ambassadors from opposing galaxies currently in residence in New York City."},
+
+          {:double => false,
+          :title1 => "Twister", 
+          :date => "July 14, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/twister-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/twister-drive-in-movie-night-falconwood-1-year-tornado-anniversary-tickets-46089586193", 
+          :description1 => "During the approach of the most powerful storm in decades, university professor Dr. Jo Harding (Helen Hunt) and an underfunded team of students prepare the prototype for Dorothy, a ground-breaking tornado data-gathering device conceived by her estranged husband, Bill (Bill Paxton). When Harding tells Bill that Dorothy is ready for testing -- and that their privately funded rival Dr. Jonas Miller (Cary Elwes) has stolen the idea and built his own -- Bill rejoins the team for one last mission."},
+
+          {:double => false,
+          :title1 => "Dirty Dancing",
+          :date => "July 15, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/dirty-dancing-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/dirty-dancing-drive-in-movie-night-tickets-46089740655", 
+          :description1 => "Baby (Jennifer Grey) is one listless summer away from the Peace Corps. Hoping to enjoy her youth while it lasts, she's disappointed when her summer plans deposit her at a sleepy resort in the Catskills with her parents. Her luck turns around, however, when the resort's dance instructor, Johnny (Patrick Swayze), enlists Baby as his new partner, and the two fall in love. Baby's father forbids her from seeing Johnny, but she's determined to help him perform the last big dance of the summer."},
+
+          {:double => false,
+          :title1 => "Die Hard",
+          :date => "July 26, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Die-Hard-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/die-hard-drive-in-movie-night-tickets-46090684478", 
+          :description1 => "New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for. But the festivities are interrupted by a group of terrorists who take over the exclusive high-rise, and everyone in it. Very soon McClane realizes that there's no one to save the hostages -- but him."},
+
+          {:double => true,
+          :title1 => "Fast Times at Ridgemont High",
+          :title2 => "Animal House", 
+          :date => "July 27, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Fast-Times-at-Ridgemont-High-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/fast-times-at-ridgemont-high-animal-house-drive-in-movie-night-tickets-46090790796",
+          :description1 => "Stacy Hamilton (Jennifer Jason Leigh) is a pretty, but inexperienced, teen interested in dating. Given advice by her uninhibited friend, Linda Barrett (Phoebe Cates), Stacy gets trapped in a love triangle with nice guy Mark Ratner (Brian Backer) and his more assured buddy Mike Damone (Robert Romanus). Meanwhile, Stacy's classmate Jeff Spicoli (Sean Penn), who lives for surfing and being stoned, faces off against Mr. Hand (Ray Walston), a strict teacher who has no time for the slacker's antics.",
+          :description2 => "Animal House: </span>When they arrive at college, socially inept freshmen Larry (Thomas Hulce) and Kent (Stephen Furst) attempt to pledge the snooty Omega Theta Pi House, but are summarily rejected. Lowering their standards, they try at the notoriously rowdy Delta Tau Chi House, and get in. The trouble is, the college dean (John Vernon) has it in for the Deltas. He has put them on \"Double Secret Probation\" and secretly assigned Omega's president (James Daughton) the task of having their charter revoked."},
+
+          {:double => false,
+          :title1 => "Wreck-It Ralph",
+          :date => "July 29, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Wreck-it-Ralph-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/wreck-it-ralph-drive-in-movie-night-tickets-46090988387", 
+          :description1 => "Arcade-game character Wreck-It Ralph (John C. Reilly) is tired of always being the \"bad guy\" and losing to his \"good guy\" opponent, Fix-It Felix (Jack McBrayer). Finally, after decades of seeing all the glory go to Felix, Ralph decides to take matters into his own hands. He sets off on a game-hopping trip to prove that he has what it takes to be a hero. However, while on his quest, Ralph accidentally unleashes a deadly enemy that threatens the entire arcade."},
+
+          {:double => false,
+          :title1 => "Jurassic Park",
+          :date => "August 2, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Jurassic-Park-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/jurassic-park-drive-in-movie-night-tickets-46091218074", 
+          :description1 => "In Steven Spielberg's massive blockbuster, paleontologists Alan Grant (Sam Neill) and Ellie Sattler (Laura Dern) and mathematician Ian Malcolm (Jeff Goldblum) are among a select group chosen to tour an island theme park populated by dinosaurs created from prehistoric DNA. While the park's mastermind, billionaire John Hammond (Richard Attenborough), assures everyone that the facility is safe, they find out otherwise when various ferocious predators break free and go on the hunt."},
+
+          {:double => true,
+          :title1 => "Jumanji",
+          :title2 => "Jumanji - Welcome to the Jungle", 
+          :date => "August 3, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Jumanji-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/jumanji-jumanji-welcome-to-the-jungle-drive-in-movie-night-tickets-46091295305", 
+          :description1 => "A magical board game unleashes a world of adventure on siblings Peter (Bradley Pierce) and Judy Shepherd (Kirsten Dunst). While exploring an old mansion, the youngsters find a curious, jungle-themed game called Jumanji in the attic. When they start playing, they free Alan Parrish (Robin Williams), who's been stuck in the game's inner world for decades. If they win Jumanji, the kids can free Alan for good -- but that means braving giant bugs, ill-mannered monkeys and even stampeding rhinos!",
+          :description2 => "Four high school kids discover an old video game console and are drawn into the game's jungle setting, literally becoming the adult avatars they chose. What they discover is that you don't just play Jumanji - you must survive it. To beat the game and return to the real world, they'll have to go on the most dangerous adventure of their lives, discover what Alan Parrish left 20 years ago, and change the way they think about themselves - or they'll be stuck in the game forever."},
+
+          {:double => false,
+          :title1 => "Top Gun",
+          :date => "August 9, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Top-Gun-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/top-gun-drive-in-movie-night-tickets-46091383569", 
+          :description1 => "The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick (Tom Cruise) is sent to the school, his reckless attitude and cocky demeanor put him at odds with the other pilots, especially the cool and collected Iceman (Val Kilmer). But Maverick isn't only competing to be the top fighter pilot, he's also fighting for the attention of his beautiful flight instructor, Charlotte Blackwood (Kelly McGillis)."},
+
+          {:double => false,
+          :title1 => "The Lion King",
+          :date => "August 16, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Lion-King-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/lion-king-drive-in-movie-night-tickets-46091498914", 
+          :description1 => "This Disney animated feature follows the adventures of the young lion Simba (Zoe Leader), the heir of his father, Mufasa (Ernie Sabella). Simba's wicked uncle, Scar (Rowan Atkinson), plots to usurp Mufasa's throne by luring father and son into a stampede of wildebeests. But Simba escapes, and only Mufasa is killed. Simba returns as an adult (Jeremy Irons) to take back his homeland from Scar with the help of his friends Timon (Jonathan Taylor Thomas) and Pumbaa (Cheech Marin)."},
+
+          {:double => false,
+          :title1 => "The Neverending Story",
+          :date => "August 19, 2018", 
+          :gates => "7:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Neverending-Story-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/neverending-story-drive-in-movie-night-tickets-46091583166", 
+          :description1 => "On his way to school, Bastian (Barret Oliver) ducks into a bookstore to avoid bullies. Sneaking away with a book called \"The Neverending Story,\" Bastian begins reading it in the school attic. The novel is about Fantasia, a fantasy land threatened by \"The Nothing,\" a darkness that destroys everything it touches. The kingdom needs the help of a human child to survive. When Bastian reads a description of himself in the book, he begins to wonder if Fantasia is real and needs him to survive."},
+
+          {:double => false,
+          :title1 => "Monster's Inc.",
+          :date => "September 27, 2018", 
+          :gates => "6:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Monsters-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/monsters-inc-drive-in-movie-night-tickets-46091624289", 
+          :description1 => "Monsters Incorporated is the largest scare factory in the monster world, and James P. Sullivan (John Goodman) is one of its top scarers. Sullivan is a huge, intimidating monster with blue fur, large purple spots and horns. His scare assistant, best friend and roommate is Mike Wazowski (Billy Crystal), a green, opinionated, feisty little one-eyed monster. Visiting from the human world is Boo (Mary Gibbs), a tiny girl who goes where no human has ever gone before."},
+
+          {:double => false,
+          :title1 => "Rocky Horror Picture Show",
+          :date => "October 4, 2018", 
+          :gates => "6:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/rocky-horror-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/rocky-horror-picture-show-drive-in-movie-night-tickets-46091700517", 
+          :description1 => "In this cult classic, sweethearts Brad (Barry Bostwick) and Janet (Susan Sarandon), stuck with a flat tire during a storm, discover the eerie mansion of Dr. Frank-N-Furter (Tim Curry), a transvestite scientist. As their innocence is lost, Brad and Janet meet a houseful of wild characters, including a rocking biker (Meat Loaf) and a creepy butler (Richard O'Brien). Through elaborate dances and rock songs, Frank-N-Furter unveils his latest creation: a muscular man named \"Rocky.\""},
+
+          {:double => false,
+          :title1 => "Twilight",
+          :date => "October 11, 2018", 
+          :gates => "5:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Twilight-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/twilight-drive-in-movie-night-tickets-46093529989", 
+          :description1 => "High-school student Bella Swan (Kristen Stewart), always a bit of a misfit, doesn't expect life to change much when she moves from sunny Arizona to rainy Washington state. Then she meets Edward Cullen (Robert Pattinson), a handsome but mysterious teen whose eyes seem to peer directly into her soul. Edward is a vampire whose family does not drink blood, and Bella, far from being frightened, enters into a dangerous romance with her immortal soulmate."},
+
+          {:double => false,
+          :title1 => "Hocus Pocus",
+          :date => "October 18, 2018", 
+          :gates => "5:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Hocus-Pocus-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/hocus-pocus-drive-in-movie-night-tickets-46093573118", 
+          :description1 => "After moving to Salem, Mass., teenager Max Dennison (Omri Katz) explores an abandoned house with his sister Dani (Thora Birch) and their new friend, Allison (Vinessa Shaw). After dismissing a story Allison tells as superstitious, Max accidentally frees a coven of evil witches (Bette Midler, Sarah Jessica Parker, Kathy Najimy) who used to live in the house. Now, with the help of a magical cat, the kids must steal the witches' book of spells to stop them from becoming immortal."},
+
+          {:double => true,
+          :title1 => "Coraline",
+          :title2 => "Hotel Transylvania",
+          :date => "October 21, 2018", 
+          :gates => "5:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Coraline-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/coraline-hotel-transylvania-drive-in-movie-night-tickets-46093621262", 
+          :description1 => "While exploring her new home, a girl named Coraline (Dakota Fanning) discovers a secret door, behind which lies an alternate world that closely mirrors her own but, in many ways, is better. She rejoices in her discovery, until Other Mother (Teri Hatcher) and the rest of her parallel family try to keep her there forever. Coraline must use all her resources and bravery to make it back to her own family and life.",
+          :description2 => "When monsters want to get away from it all, they go to Count Dracula's (Adam Sandler) Hotel Transylvania, a lavish resort where they can be themselves without humans around to bother them. On one special weekend, Dracula invites creatures like the Invisible Man, the Mummy and others to celebrate the 118th birthday of his daughter, Mavis (Selena Gomez). However, an unforeseen complication unfolds when an ordinary human unwittingly crashes the party and falls in love with Mavis."},
+
+          {:double => false,
+          :title1 => "The Nightmare Before Christmas",
+          :date => "October 25, 2018", 
+          :gates => "5:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Nightmare-Before-Christmas-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/nightmare-before-christmas-drive-in-movie-night-tickets-46093713538", 
+          :description1 => "The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the \"real world.\" When Jack accidentally stumbles on Christmastown, all bright colors and warm spirits, he gets a new lease on life -- he plots to bring Christmas under his control by kidnapping Santa Claus and taking over the role. But Jack soon discovers even the best-laid plans of mice and skeleton men can go seriously awry."},
+
+          {:double => true,
+          :title1 => "The Craft",
+          :title2 => "Zombieland",
+          :date => "October 27, 2018", 
+          :gates => "5:00 p.m.", 
+          :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Craft-Zombieland-2018.jpg", 
+          :start => "Dusk", 
+          :tickets => "https://www.eventbrite.com/e/the-craft-zombieland-drive-in-movie-night-tickets-46093886054", 
+          :description1 => "After transferring to a Los Angeles high school, Sarah (Robin Tunney) finds that her telekinetic gift appeals to a group of three wannabe witches, who happen to be seeking a fourth member for their rituals. Bonnie (Neve Campbell), Rochelle (Rachel True) and Nancy (Fairuza Balk), like Sarah herself, all have troubled backgrounds, which combined with their nascent powers lead to dangerous consequences. When a minor spell causes a fellow student to lose her hair, the girls grow power-mad.",
+          :description2 => "After a virus turns most people into zombies, the world's surviving humans remain locked in an ongoing battle against the hungry undead. Four survivors -- Tallahassee (Woody Harrelson) and his cohorts Columbus (Jesse Eisenberg), Wichita (Emma Stone) and Little Rock (Abigail Breslin) -- abide by a list of survival rules and zombie-killing strategies as they make their way toward a rumored safe haven in Los Angeles."},
+        ] %>
+
+
         <div id="Lineup" class="tabcontent container">
-          <!-- 10 Things -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/10-things-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">10 Things I Hate About You</span></h2>
-                  <h3 class="text-center yellow">June 28, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/10-things-i-hate-about-you-drive-in-movie-night-tickets-46089816883", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+          <% @movies.each do |movie|%>
+            <div class="row p-t-5 p-b-5">
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <%= image_tag movie[:pic], class:"half-col-img" %>
                   </div>
+                  <div class="col-sm-12 col-md-6">
+                    <% if movie[:double] == true %>
+                      <h2 class="yellow text-center accent-font-2"><span class="lineup-title"><%=movie[:title1] %>/<br><%= movie[:title2] %></span><br>Double Feature</h2>
+                    <% else %>
+                      <h2 class="yellow text-center accent-font-2"><span class="lineup-title"><%=movie[:title1] %></span></h2>
+                    <% end %>
 
-                  <p class="m-t-10 m-l-5">Kat Stratford (Julia Stiles) is beautiful, smart and quite abrasive to most of her fellow teens, meaning that she doesn't attract many boys. Unfortunately for her younger sister, Bianca (Larisa Oleynik), house rules say that she can't date until Kat has a boyfriend, so strings are pulled to set the dour damsel up for a romance. Soon Kat crosses paths with handsome new arrival Patrick Verona (Heath Ledger). Will Kat let her guard down enough to fall for the effortlessly charming Patrick?</p>
+                    <h3 class="text-center yellow"><%= movie[:date] %></h3>
+
+                    <% if movie[:double] == true %>
+                      <h4 class="text-center">Gates Open: <span class="yellow"><%= movie[:gates] %></span><br><%= movie[:title1] %> Start Time: <span class="yellow">Dusk</span><br><%= movie[:title2] %> Start Time: <span class="yellow">Immediately Following</span></h4>
+                    <% else %>
+                      <h4 class="text-center">Gates Open: <span class="yellow"><%= movie[:gates] %></span><br>Movie Start Time: <span class="yellow"><%= movie[:start] %></span></h4>
+                    <% end %>
+                    
+                    <div class="button-container">
+                      <%= link_to "Purchase Tickets", movie[:tickets], class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                    </div>
+
+                    
+                    <% if movie[:double] == true %>
+                      <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2"><%= movie[:title1] %>: </span><%= movie[:description1] %></p>
+
+                      <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2"><%= movie[:title2] %>: </span><%= movie[:description2] %></p>
+                    <% else %>
+                      <p class="m-t-10 m-l-5"><%= movie[:description1] %></p>
+                    <% end %>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <hr>
-
-          <!-- The breakfast club -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Breakfast-Club-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Breakfast Club</span></h2>
-                  <h3 class="text-center yellow">July 5, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-breakfast-club-drive-in-movie-night-tickets-46090022498", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">Five high school students from different walks of life endure a Saturday detention under a power-hungry principal (Paul Gleason). The disparate group includes rebel John (Judd Nelson), princess Claire (Molly Ringwald), outcast Allison (Ally Sheedy), brainy Brian (Anthony Michael Hall) and Andrew (Emilio Estevez), the jock. Each has a chance to tell his or her story, making the others see them a little differently -- and when the day ends, they question whether school will ever be the same.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Goonies/Big Trouble -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Goonies-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Goonies/Big Trouble in Little China</span><br>Double Feature</h2>
-                  <h3 class="text-center yellow">July 7, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>The Goonies Start Time: <span class="yellow">Dusk</span><br>Big Trouble in Little China Start Time: <span class="yellow">Immediately Following</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-goonies-big-trouble-in-little-china-drive-in-movie-night-tickets-46090210059", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">The Goonies: </span>Old-fashioned yarn about a band of adventurous kids who take on the might of a property developing company which plans to destroy their home to build a country club. When the children discover an old pirate map in the attic, they follow it into an underground cavern in search of lost treasure but come up against plenty of dangerous obstacles along the way.</p>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Big Trouble in Little China: </span>Kurt Russell plays hard-boiled truck driver Jack Burton, who gets caught in a bizarre conflict within, and underneath, San Francisco's Chinatown. An ancient Chinese prince and Chinatown crime lord has kidnapped a beautiful green-eyed woman, who is the fiancee to Jack's best friend. Jack must help his friend rescue the girl before the evil Lo Pan uses her to break the ancient curse that keeps him a fleshless and immortal spirit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Dazed and confused -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Dazed-and-Confused-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Dazed and Confused</span></h2>
-                  <h3 class="text-center yellow">July 8, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/dazed-and-confused-drive-in-movie-night-tickets-46090314371", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">This coming-of-age film follows the mayhem of group of rowdy teenagers in Austin, Texas, celebrating the last day of high school in 1976. The graduating class heads for a popular pool hall and joins an impromptu keg party, however star football player Randall "Pink" Floyd (Jason London) has promised to focus on the championship game and abstain from partying. Meanwhile, the incoming freshmen try to avoid being hazed by the seniors, most notably the sadistic bully Fred O'Bannion (Ben Affleck).</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Indiana Jones Last Crusade -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Indiana-Jones-and-the-Last-Crusade-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Indiana Jones and the Last Crusade</span></h2>
-                  <h3 class="text-center yellow">July 12, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/indiana-jones-and-the-last-crusade-drive-in-movie-night-tickets-46090364521", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">The intrepid explorer Indiana Jones sets out to rescue his father, a medievalist who has vanished while searching for the Holy Grail. Following clues in the old man's notebook, Indy arrives in Venice, where he enlists the help of a beautiful academic, but they are not the only ones who are on the trail, and some sinister old enemies soon come out of the woodwork.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Armageddon/Men In Black -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Armageddon-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Armageddon/Men In Black</span><br>Double Feature</h2>
-                  <h3 class="text-center yellow">July 13, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Armageddon Start Time: <span class="yellow">Dusk</span><br>Men In Black Start Time: <span class="yellow">Immediately Following</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/armageddon-men-in-black-drive-in-movie-night-tickets-46090578160", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Armageddon: </span>When an asteroid threatens to collide with Earth, NASA honcho Dan Truman (Billy Bob Thornton) determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper (Bruce Willis), who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. (Ben Affleck), who Harry thinks isn't good enough for his daughter (Liv Tyler), until the mission proves otherwise.</p>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Men In Black: </span>They are the best-kept secret in the universe. Working for a highly funded yet unofficial government agency, Kay (Tommy Lee Jones) and Jay (Will Smith) are the Men in Black, providers of immigration services and regulators of all things alien on Earth. While investigating a series of unregistered close encounters, the MIB agents uncover the deadly plot of an intergalactic terrorist who is on a mission to assassinate two ambassadors from opposing galaxies currently in residence in New York City.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-          
-          <!-- Twister -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/twister-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Twister</span></h2>
-                  <h3 class="text-center yellow">July 14, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/twister-drive-in-movie-night-falconwood-1-year-tornado-anniversary-tickets-46089586193", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">During the approach of the most powerful storm in decades, university professor Dr. Jo Harding (Helen Hunt) and an underfunded team of students prepare the prototype for Dorothy, a ground-breaking tornado data-gathering device conceived by her estranged husband, Bill (Bill Paxton). When Harding tells Bill that Dorothy is ready for testing -- and that their privately funded rival Dr. Jonas Miller (Cary Elwes) has stolen the idea and built his own -- Bill rejoins the team for one last mission.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Dirty Dancing -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/dirty-dancing-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Dirty Dancing</span></h2>
-                  <h3 class="text-center yellow">July 15, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/dirty-dancing-drive-in-movie-night-tickets-46089740655", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">Baby (Jennifer Grey) is one listless summer away from the Peace Corps. Hoping to enjoy her youth while it lasts, she's disappointed when her summer plans deposit her at a sleepy resort in the Catskills with her parents. Her luck turns around, however, when the resort's dance instructor, Johnny (Patrick Swayze), enlists Baby as his new partner, and the two fall in love. Baby's father forbids her from seeing Johnny, but she's determined to help him perform the last big dance of the summer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Die Hard -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Die-Hard-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Die Hard</span></h2>
-                  <h3 class="text-center yellow">July 26, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/die-hard-drive-in-movie-night-tickets-46090684478", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for. But the festivities are interrupted by a group of terrorists who take over the exclusive high-rise, and everyone in it. Very soon McClane realizes that there's no one to save the hostages -- but him.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Fast Times/Animal House -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Fast-Times-at-Ridgemont-High-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Fast Times at Ridgemont High/Animal House</span><br>Double Feature</h2>
-                  <h3 class="text-center yellow">July 27, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Fast Times at Ridgemont High Start Time: <span class="yellow">Dusk</span><br>Animal House Start Time: <span class="yellow">Immediately Following</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/fast-times-at-ridgemont-high-animal-house-drive-in-movie-night-tickets-46090790796", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Fast Times at Ridgemont High: </span>Stacy Hamilton (Jennifer Jason Leigh) is a pretty, but inexperienced, teen interested in dating. Given advice by her uninhibited friend, Linda Barrett (Phoebe Cates), Stacy gets trapped in a love triangle with nice guy Mark Ratner (Brian Backer) and his more assured buddy Mike Damone (Robert Romanus). Meanwhile, Stacy's classmate Jeff Spicoli (Sean Penn), who lives for surfing and being stoned, faces off against Mr. Hand (Ray Walston), a strict teacher who has no time for the slacker's antics.</p>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Animal House: </span>When they arrive at college, socially inept freshmen Larry (Thomas Hulce) and Kent (Stephen Furst) attempt to pledge the snooty Omega Theta Pi House, but are summarily rejected. Lowering their standards, they try at the notoriously rowdy Delta Tau Chi House, and get in. The trouble is, the college dean (John Vernon) has it in for the Deltas. He has put them on "Double Secret Probation" and secretly assigned Omega's president (James Daughton) the task of having their charter revoked.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Wreck It Ralph -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Wreck-it-Ralph-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Wreck-It Ralph</span></h2>
-                  <h3 class="text-center yellow">July 29, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/wreck-it-ralph-drive-in-movie-night-tickets-46090988387", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">Arcade-game character Wreck-It Ralph (John C. Reilly) is tired of always being the "bad guy" and losing to his "good guy" opponent, Fix-It Felix (Jack McBrayer). Finally, after decades of seeing all the glory go to Felix, Ralph decides to take matters into his own hands. He sets off on a game-hopping trip to prove that he has what it takes to be a hero. However, while on his quest, Ralph accidentally unleashes a deadly enemy that threatens the entire arcade.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Jurassic Park -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Jurassic-Park-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Jurassic Park</span></h2>
-                  <h3 class="text-center yellow">August 2, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/jurassic-park-drive-in-movie-night-tickets-46091218074", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">In Steven Spielberg's massive blockbuster, paleontologists Alan Grant (Sam Neill) and Ellie Sattler (Laura Dern) and mathematician Ian Malcolm (Jeff Goldblum) are among a select group chosen to tour an island theme park populated by dinosaurs created from prehistoric DNA. While the park's mastermind, billionaire John Hammond (Richard Attenborough), assures everyone that the facility is safe, they find out otherwise when various ferocious predators break free and go on the hunt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Jumani Classic/Jumani New -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Jumanji-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Jumanji (classic)/Jumanji (new)</span><br>Double Feature</h2>
-                  <h3 class="text-center yellow">August 3, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Jumanji (classic) Start Time: <span class="yellow">Dusk</span><br>Jumanji (new) Start Time: <span class="yellow">Immediately Following</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/jumanji-jumanji-welcome-to-the-jungle-drive-in-movie-night-tickets-46091295305", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Jumanji (classic): </span>A magical board game unleashes a world of adventure on siblings Peter (Bradley Pierce) and Judy Shepherd (Kirsten Dunst). While exploring an old mansion, the youngsters find a curious, jungle-themed game called Jumanji in the attic. When they start playing, they free Alan Parrish (Robin Williams), who's been stuck in the game's inner world for decades. If they win Jumanji, the kids can free Alan for good -- but that means braving giant bugs, ill-mannered monkeys and even stampeding rhinos!</p>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Jumanji (new): </span>Four high school kids discover an old video game console and are drawn into the game's jungle setting, literally becoming the adult avatars they chose. What they discover is that you don't just play Jumanji - you must survive it. To beat the game and return to the real world, they'll have to go on the most dangerous adventure of their lives, discover what Alan Parrish left 20 years ago, and change the way they think about themselves - or they'll be stuck in the game forever.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Top Gun -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Top-Gun-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Top Gun</span></h2>
-                  <h3 class="text-center yellow">August 9, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/top-gun-drive-in-movie-night-tickets-46091383569", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick (Tom Cruise) is sent to the school, his reckless attitude and cocky demeanor put him at odds with the other pilots, especially the cool and collected Iceman (Val Kilmer). But Maverick isn't only competing to be the top fighter pilot, he's also fighting for the attention of his beautiful flight instructor, Charlotte Blackwood (Kelly McGillis).</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Lion King -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Lion-King-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Lion King</span></h2>
-                  <h3 class="text-center yellow">August 16, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/lion-king-drive-in-movie-night-tickets-46091498914", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">This Disney animated feature follows the adventures of the young lion Simba (Zoe Leader), the heir of his father, Mufasa (Ernie Sabella). Simba's wicked uncle, Scar (Rowan Atkinson), plots to usurp Mufasa's throne by luring father and son into a stampede of wildebeests. But Simba escapes, and only Mufasa is killed. Simba returns as an adult (Jeremy Irons) to take back his homeland from Scar with the help of his friends Timon (Jonathan Taylor Thomas) and Pumbaa (Cheech Marin).</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- The Neverending Story -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Neverending-Story-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Neverending Story</span></h2>
-                  <h3 class="text-center yellow">August 19, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">7:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/neverending-story-drive-in-movie-night-tickets-46091583166", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">On his way to school, Bastian (Barret Oliver) ducks into a bookstore to avoid bullies. Sneaking away with a book called "The Neverending Story," Bastian begins reading it in the school attic. The novel is about Fantasia, a fantasy land threatened by "The Nothing," a darkness that destroys everything it touches. The kingdom needs the help of a human child to survive. When Bastian reads a description of himself in the book, he begins to wonder if Fantasia is real and needs him to survive.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Monsters Inc. -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Monsters-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Monsters Inc.</span></h2>
-                  <h3 class="text-center yellow">September 27, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">6:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/monsters-inc-drive-in-movie-night-tickets-46091624289", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">Monsters Incorporated is the largest scare factory in the monster world, and James P. Sullivan (John Goodman) is one of its top scarers. Sullivan is a huge, intimidating monster with blue fur, large purple spots and horns. His scare assistant, best friend and roommate is Mike Wazowski (Billy Crystal), a green, opinionated, feisty little one-eyed monster. Visiting from the human world is Boo (Mary Gibbs), a tiny girl who goes where no human has ever gone before.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Rocky Horror Picture Show -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/rocky-horror-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Rocky Horror Picture Show</span></h2>
-                  <h3 class="text-center yellow">October 4, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">6:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/rocky-horror-picture-show-drive-in-movie-night-tickets-46091700517", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">In this cult classic, sweethearts Brad (Barry Bostwick) and Janet (Susan Sarandon), stuck with a flat tire during a storm, discover the eerie mansion of Dr. Frank-N-Furter (Tim Curry), a transvestite scientist. As their innocence is lost, Brad and Janet meet a houseful of wild characters, including a rocking biker (Meat Loaf) and a creepy butler (Richard O'Brien). Through elaborate dances and rock songs, Frank-N-Furter unveils his latest creation: a muscular man named "Rocky."</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Twilight -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Twilight-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Twilight</span></h2>
-                  <h3 class="text-center yellow">October 11, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">5:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/twilight-drive-in-movie-night-tickets-46093529989", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">High-school student Bella Swan (Kristen Stewart), always a bit of a misfit, doesn't expect life to change much when she moves from sunny Arizona to rainy Washington state. Then she meets Edward Cullen (Robert Pattinson), a handsome but mysterious teen whose eyes seem to peer directly into her soul. Edward is a vampire whose family does not drink blood, and Bella, far from being frightened, enters into a dangerous romance with her immortal soulmate.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Hocus Pocus -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Hocus-Pocus-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Hocus Pocus</span></h2>
-                  <h3 class="text-center yellow">October 18, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">5:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/hocus-pocus-drive-in-movie-night-tickets-46093573118", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">After moving to Salem, Mass., teenager Max Dennison (Omri Katz) explores an abandoned house with his sister Dani (Thora Birch) and their new friend, Allison (Vinessa Shaw). After dismissing a story Allison tells as superstitious, Max accidentally frees a coven of evil witches (Bette Midler, Sarah Jessica Parker, Kathy Najimy) who used to live in the house. Now, with the help of a magical cat, the kids must steal the witches' book of spells to stop them from becoming immortal.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Coraline/Hotel Trans -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Coraline-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">Hotel Transylvania/Coraline</span><br>Double Feature</h2>
-                  <h3 class="text-center yellow">October 21, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">5:00 p.m.</span><br>Hotel Transylvania Start Time: <span class="yellow">Dusk</span><br>Coraline Start Time: <span class="yellow">Immediately Following</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/coraline-hotel-transylvania-drive-in-movie-night-tickets-46093621262", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Coraline: </span>While exploring her new home, a girl named Coraline (Dakota Fanning) discovers a secret door, behind which lies an alternate world that closely mirrors her own but, in many ways, is better. She rejoices in her discovery, until Other Mother (Teri Hatcher) and the rest of her parallel family try to keep her there forever. Coraline must use all her resources and bravery to make it back to her own family and life.</p>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Hotel Transylvania: </span>When monsters want to get away from it all, they go to Count Dracula's (Adam Sandler) Hotel Transylvania, a lavish resort where they can be themselves without humans around to bother them. On one special weekend, Dracula invites creatures like the Invisible Man, the Mummy and others to celebrate the 118th birthday of his daughter, Mavis (Selena Gomez). However, an unforeseen complication unfolds when an ordinary human unwittingly crashes the party and falls in love with Mavis.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- Nightmare Before Christmas -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Nightmare-Before-Christmas-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Nightmare Before Christmas</span></h2>
-                  <h3 class="text-center yellow">October 25, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">5:00 p.m.</span><br>Movie Start Time: <span class="yellow">Dusk</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/nightmare-before-christmas-drive-in-movie-night-tickets-46093713538", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5">The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the "real world." When Jack accidentally stumbles on Christmastown, all bright colors and warm spirits, he gets a new lease on life -- he plots to bring Christmas under his control by kidnapping Santa Claus and taking over the role. But Jack soon discovers even the best-laid plans of mice and skeleton men can go seriously awry.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <!-- The craft/zombieland -->
-          <div class="row p-t-5 p-b-5">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <%= image_tag "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Craft-Zombieland-2018.jpg", class:"half-col-img" %>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <h2 class="yellow text-center accent-font-2"><span class="lineup-title">The Craft/Zombieland</span><br>Double Feature</h2>
-                  <h3 class="text-center yellow">October 27, 2018</h3>
-                  <h4 class="text-center">Gates Open: <span class="yellow">5:00 p.m.</span><br>The Craft Start Time: <span class="yellow">Dusk</span><br>Zombieland Start Time: <span class="yellow">Immediately Following</span></h4>
-                  
-                  <div class="button-container">
-                    <%= link_to "Purchase Tickets", "https://www.eventbrite.com/e/the-craft-zombieland-drive-in-movie-night-tickets-46093886054", class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
-                  </div>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">The Craft: </span>After transferring to a Los Angeles high school, Sarah (Robin Tunney) finds that her telekinetic gift appeals to a group of three wannabe witches, who happen to be seeking a fourth member for their rituals. Bonnie (Neve Campbell), Rochelle (Rachel True) and Nancy (Fairuza Balk), like Sarah herself, all have troubled backgrounds, which combined with their nascent powers lead to dangerous consequences. When a minor spell causes a fellow student to lose her hair, the girls grow power-mad.</p>
-
-                  <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2">Zombieland: </span>After a virus turns most people into zombies, the world's surviving humans remain locked in an ongoing battle against the hungry undead. Four survivors -- Tallahassee (Woody Harrelson) and his cohorts Columbus (Jesse Eisenberg), Wichita (Emma Stone) and Little Rock (Abigail Breslin) -- abide by a list of survival rules and zombie-killing strategies as they make their way toward a rumored safe haven in Los Angeles.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
+            <hr>
+          <% end %>
 
           <div class="row p-t-5 p-b-5">
             <div class="col-sm-12">
