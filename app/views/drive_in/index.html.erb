@@ -325,7 +325,9 @@
 
           {:double => false,
           :title1 => "The Neverending Story",
-          :date => "August 19th, 2018 showing canceled due to weather conditions", 
+          :date => Date.new(2018, 8, 19),
+          :status => "Canceled",
+          :status_reason => "Due to weather conditions.",
           :gates => "", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Neverending-Story-2018.jpg", 
           :start => "", 
@@ -334,7 +336,7 @@
 
           {:double => false,
           :title1 => "Wreck-It Ralph",
-          :date => "August 26th, 2018", 
+          :date => Date.new(2018, 8, 26),
           :gates => "6:30 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Wreck-it-Ralph-2018.jpg", 
           :start => "Dusk", 
@@ -343,7 +345,7 @@
 
           {:double => false,
           :title1 => "Monster's Inc.",
-          :date => "September 27, 2018", 
+          :date => Date.new(2018, 9, 27), 
           :gates => "6:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Monsters-2018.jpg", 
           :start => "Dusk", 
@@ -352,7 +354,7 @@
 
           {:double => false,
           :title1 => "Rocky Horror Picture Show",
-          :date => "October 4, 2018", 
+          :date => Date.new(2018, 10, 4), 
           :gates => "6:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/rocky-horror-2018.jpg", 
           :start => "Dusk", 
@@ -361,7 +363,7 @@
 
           {:double => false,
           :title1 => "Twilight",
-          :date => "October 11, 2018", 
+          :date => Date.new(2018, 10, 11), 
           :gates => "5:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Twilight-2018.jpg", 
           :start => "Dusk", 
@@ -370,7 +372,7 @@
 
           {:double => false,
           :title1 => "Hocus Pocus",
-          :date => "October 18, 2018", 
+          :date => Date.new(2018, 10, 18), 
           :gates => "5:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Hocus-Pocus-2018.jpg", 
           :start => "Dusk", 
@@ -380,7 +382,7 @@
           {:double => true,
           :title1 => "Coraline",
           :title2 => "Hotel Transylvania",
-          :date => "October 21, 2018", 
+          :date => Date.new(2018, 10, 21), 
           :gates => "5:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Coraline-2018.jpg", 
           :start => "Dusk", 
@@ -390,7 +392,7 @@
 
           {:double => false,
           :title1 => "The Nightmare Before Christmas",
-          :date => "October 25, 2018", 
+          :date => Date.new(2018, 10, 25), 
           :gates => "5:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Nightmare-Before-Christmas-2018.jpg", 
           :start => "Dusk", 
@@ -400,7 +402,7 @@
           {:double => true,
           :title1 => "The Craft",
           :title2 => "Zombieland",
-          :date => "October 27, 2018", 
+          :date => Date.new(2018, 10, 27), 
           :gates => "5:00 p.m.", 
           :pic => "https://s3-us-west-2.amazonaws.com/falconwood/Drive-In/posters/Craft-Zombieland-2018.jpg", 
           :start => "Dusk", 
@@ -412,44 +414,55 @@
 
         <div id="Lineup" class="tabcontent container">
           <% @movies.each do |movie|%>
-            <div class="row p-t-5 p-b-5">
-              <div class="col-sm-12">
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <%= image_tag movie[:pic], class:"half-col-img" %>
-                  </div>
-                  <div class="col-sm-12 col-md-6">
-                    <% if movie[:double] == true %>
-                      <h2 class="yellow text-center accent-font-2"><span class="lineup-title"><%=movie[:title1] %>/<br><%= movie[:title2] %></span><br>Double Feature</h2>
-                    <% else %>
-                      <h2 class="yellow text-center accent-font-2"><span class="lineup-title"><%=movie[:title1] %></span></h2>
-                    <% end %>
-
-                    <h3 class="text-center yellow"><%= movie[:date] %></h3>
-
-                    <% if movie[:double] == true %>
-                      <h4 class="text-center">Gates Open: <span class="yellow"><%= movie[:gates] %></span><br><%= movie[:title1] %> Start Time: <span class="yellow">Dusk</span><br><%= movie[:title2] %> Start Time: <span class="yellow">Immediately Following</span></h4>
-                    <% else %>
-                      <h4 class="text-center">Gates Open: <span class="yellow"><%= movie[:gates] %></span><br>Movie Start Time: <span class="yellow"><%= movie[:start] %></span></h4>
-                    <% end %>
-                    
-                    <div class="button-container">
-                      <%= link_to "Purchase Tickets", movie[:tickets], class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+            <% @movieStatus = "" %>
+            <% if !movie[:date].past? %>
+              <div class="row p-t-5 p-b-5">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <%= image_tag movie[:pic], class:"half-col-img" %>
                     </div>
+                    <div class="col-sm-12 col-md-6">
+                      <% if movie[:double] == true %>
+                        <h2 class="yellow text-center accent-font-2"><span class="lineup-title"><%=movie[:title1] %>/<br><%= movie[:title2] %></span><br>Double Feature</h2>
+                      <% else %>
+                        <h2 class="yellow text-center accent-font-2"><span class="lineup-title"><%=movie[:title1] %></span></h2>
+                      <% end %>
 
-                    
-                    <% if movie[:double] == true %>
-                      <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2"><%= movie[:title1] %>: </span><%= movie[:description1] %></p>
+                      <% if movie.has_key? :status %>
+                        <% @movieStatus = movie[:status] %>
+                        <h3 class="text-center yellow"><%= movie[:status] %></h3>
+                        <h4 class="text-center"><%= movie[:status_reason] %></h4>
+                      <% else %>
+                        <h3 class="text-center yellow"><%= movie[:date].to_s(:long) %></h3>
+                      <% end %>
 
-                      <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2"><%= movie[:title2] %>: </span><%= movie[:description2] %></p>
-                    <% else %>
-                      <p class="m-t-10 m-l-5"><%= movie[:description1] %></p>
-                    <% end %>
+                      <% if movie[:double] == true %>
+                        <h4 class="text-center">Gates Open: <span class="yellow"><%= movie[:gates] %></span><br><%= movie[:title1] %> Start Time: <span class="yellow">Dusk</span><br><%= movie[:title2] %> Start Time: <span class="yellow">Immediately Following</span></h4>
+                      <% else %>
+                        <h4 class="text-center">Gates Open: <span class="yellow"><%= movie[:gates] %></span><br>Movie Start Time: <span class="yellow"><%= movie[:start] %></span></h4>
+                      <% end %>
+                      
+                      <% if @movieStatus != "Canceled" %>
+                        <div class="button-container">
+                          <%= link_to "Purchase Tickets", movie[:tickets], class: "btn btn-secondary action-button", role: "button", :target => "_blank" %>
+                        </div>
+                      <% end %>
+
+                      
+                      <% if movie[:double] == true %>
+                        <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2"><%= movie[:title1] %>: </span><%= movie[:description1] %></p>
+
+                        <p class="m-t-10 m-l-5"><span class="yellow text-center accent-font-2"><%= movie[:title2] %>: </span><%= movie[:description2] %></p>
+                      <% else %>
+                        <p class="m-t-10 m-l-5"><%= movie[:description1] %></p>
+                      <% end %>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <hr>
+              <hr>
+            <% end %>
           <% end %>
 
           <div class="row p-t-5 p-b-5">
